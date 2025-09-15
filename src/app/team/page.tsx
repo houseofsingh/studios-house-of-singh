@@ -1002,7 +1002,7 @@ export default function Page() {
               </div>
               <Link
                 data-wf--button--variant="white-large"
-                href="/company/contact-2"
+                href="/contact"
                 className="button w-variant-521e6cc1-75a7-b354-2091-51e1cfdc804a w-inline-block"
               >
                 <div className="button-text-wrapper">

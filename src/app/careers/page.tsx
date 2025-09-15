@@ -283,7 +283,7 @@ function SectionFive() {
     title:
       "Interested in joining our team but didn’t see an appropriate opening? We’d like to hear from you.",
     cta: {
-      href: "/company/contact-2",
+      href: "/contact",
       title: "Get in touch",
     },
   };

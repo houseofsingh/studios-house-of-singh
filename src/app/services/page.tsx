@@ -448,7 +448,7 @@ export default function Page() {
                 </div>
                 <Link
                   data-wf--button--variant="large"
-                  href="/company/about-1"
+                  href="/about"
                   className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
                 >
                   <div className="button-text-wrapper">

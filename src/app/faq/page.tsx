@@ -202,7 +202,7 @@ function SectionTwo() {
     title:
       "If you have any further questions or enquiries, please get in touch with our team via the contact page.",
     cta: {
-      href: "/company/contact-2",
+      href: "/contact",
       title: "Get in touch",
     },
   };

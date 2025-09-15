@@ -304,7 +304,7 @@ export default function Page() {
                   </div>
                   <Link
                     data-wf--button--variant="outlined"
-                    href="/company/team"
+                    href="/team"
                     className="button w-variant-90b7551e-2f4d-fd9e-89eb-368bc1201380 w-inline-block"
                   >
                     <div className="button-text-wrapper">
@@ -583,7 +583,7 @@ export default function Page() {
                 </div>
                 <Link
                   data-wf--button--variant="large"
-                  href="/company/contact-3"
+                  href="/contact"
                   className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
                 >
                   <div className="button-text-wrapper">

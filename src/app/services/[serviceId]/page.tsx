@@ -21,7 +21,7 @@ export default function Page() {
             <div className="services-title-wrapper">
               <Link
                 data-w-id="f1197e9e-15bd-4464-b0e8-de1079947e9a"
-                href="/company/services"
+                href="/services"
                 className="back-link w-inline-block"
                 style={{ opacity: "0.5" }}
               >
@@ -186,7 +186,7 @@ export default function Page() {
               </div>
               <Link
                 data-wf--button--variant="large"
-                href="/company/contact-2"
+                href="/contact"
                 className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
               >
                 <div className="button-text-wrapper">

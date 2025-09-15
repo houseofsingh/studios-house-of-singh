@@ -10,10 +10,7 @@ export default function Page() {
         <div className="container---main">
           <div className="content-long align-center">
             <div className="team-member-contents">
-              <Link
-                href="/company/team"
-                className="back-to-team w-inline-block"
-              >
+              <Link href="/team" className="back-to-team w-inline-block">
                 <img
                   src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/67a4312ccab3e6928ef7a96b_interface-icon-cross-small.svg"
                   alt="cross icon"
