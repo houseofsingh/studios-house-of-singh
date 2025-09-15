@@ -178,7 +178,7 @@ function CarouselPrevious({
   ...props
 }: React.ComponentProps<typeof Button>) {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
-
+  const {asChild} = props;
   return (
     <Button
       data-slot="carousel-previous"
@@ -195,10 +195,16 @@ function CarouselPrevious({
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft />
-      <span className="sr-only">Previous slide</span>
+      {asChild ? (
+        props.children
+      ) : (
+        <>
+          <ArrowLeft />
+          <span className="sr-only">Previous slide</span>
+        </>
+      )}
     </Button>
-  )
+  );
 }
 
 function CarouselNext({
@@ -208,7 +214,7 @@ function CarouselNext({
   ...props
 }: React.ComponentProps<typeof Button>) {
   const { orientation, scrollNext, canScrollNext } = useCarousel()
-
+  const { asChild } = props;
   return (
     <Button
       data-slot="carousel-next"
@@ -225,10 +231,16 @@ function CarouselNext({
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight />
-      <span className="sr-only">Next slide</span>
+      {asChild ? (
+        props.children
+      ) : (
+        <>
+          <ArrowRight />
+          <span className="sr-only">Next slide</span>
+        </>
+      )}
     </Button>
-  )
+  );
 }
 
 export {
