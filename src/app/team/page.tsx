@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -76,7 +77,7 @@ export default function Page() {
                             </div>
                           </div>
                           <div className="team-member-social">
-                            <a
+                            <Link
                               href="https://twitter.com/"
                               className="social-link w-inline-block"
                             >
@@ -84,8 +85,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3535414e0dc1597a9ad_icon-social-x.svg"
                                 alt="X (Twitter) icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="https://linkedin.com/"
                               className="social-link w-inline-block"
                             >
@@ -93,8 +94,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3545beeb32d99e4ea93_icon-social-linkedin.svg"
                                 alt="Linkedin icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="https://bluesky.com/"
                               className="social-link w-inline-block"
                             >
@@ -102,8 +103,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d35312fcde9b75ffb736_icon-social-bluesky.svg"
                                 alt="Bluesky icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               data-wf--arrow-hover-link--variant="base"
                               href="mailto:marcus@website.com"
                               className="arrow-hover-link w-inline-block"
@@ -124,7 +125,7 @@ export default function Page() {
                               >
                                 marcus@website.com
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                         <div className="team-member-bio">
@@ -159,7 +160,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div className="show-on-mobile">
-                  <a
+                  <Link
                     href="/team-members/marcus-schwarz"
                     className="team-member w-inline-block"
                   >
@@ -178,7 +179,7 @@ export default function Page() {
                         Founder &amp; Creative Director
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div role="listitem" className="w-dyn-item">
@@ -227,7 +228,7 @@ export default function Page() {
                             </div>
                           </div>
                           <div className="team-member-social">
-                            <a
+                            <Link
                               href="https://twitter.com/"
                               className="social-link w-inline-block"
                             >
@@ -235,8 +236,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3535414e0dc1597a9ad_icon-social-x.svg"
                                 alt="X (Twitter) icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="https://linkedin.com/"
                               className="social-link w-inline-block"
                             >
@@ -244,8 +245,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3545beeb32d99e4ea93_icon-social-linkedin.svg"
                                 alt="Linkedin icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="https://bluesky.com/"
                               className="social-link w-inline-block"
                             >
@@ -253,8 +254,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d35312fcde9b75ffb736_icon-social-bluesky.svg"
                                 alt="Bluesky icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               data-wf--arrow-hover-link--variant="base"
                               href="mailto:sofia@website.com"
                               className="arrow-hover-link w-inline-block"
@@ -275,7 +276,7 @@ export default function Page() {
                               >
                                 sofia@website.com
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                         <div className="team-member-bio">
@@ -311,7 +312,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div className="show-on-mobile">
-                  <a
+                  <Link
                     href="/team-members/sofia-cohen"
                     className="team-member w-inline-block"
                   >
@@ -328,7 +329,7 @@ export default function Page() {
                       <div>Sofia Cohen</div>
                       <div className="muted-text">Managing Director</div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div role="listitem" className="w-dyn-item">
@@ -377,7 +378,7 @@ export default function Page() {
                             </div>
                           </div>
                           <div className="team-member-social">
-                            <a
+                            <Link
                               href="https://twitter.com/"
                               className="social-link w-inline-block"
                             >
@@ -385,8 +386,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3535414e0dc1597a9ad_icon-social-x.svg"
                                 alt="X (Twitter) icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="https://linkedin.com/"
                               className="social-link w-inline-block"
                             >
@@ -394,8 +395,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3545beeb32d99e4ea93_icon-social-linkedin.svg"
                                 alt="Linkedin icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="https://bluesky.com/"
                               className="social-link w-inline-block"
                             >
@@ -403,8 +404,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d35312fcde9b75ffb736_icon-social-bluesky.svg"
                                 alt="Bluesky icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               data-wf--arrow-hover-link--variant="base"
                               href="mailto:james@website.com"
                               className="arrow-hover-link w-inline-block"
@@ -425,7 +426,7 @@ export default function Page() {
                               >
                                 james@website.com
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                         <div className="team-member-bio">
@@ -457,7 +458,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div className="show-on-mobile">
-                  <a
+                  <Link
                     href="/team-members/james-whitaker"
                     className="team-member w-inline-block"
                   >
@@ -474,7 +475,7 @@ export default function Page() {
                       <div>James Whitaker</div>
                       <div className="muted-text">Creative Director</div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div role="listitem" className="w-dyn-item">
@@ -523,7 +524,7 @@ export default function Page() {
                             </div>
                           </div>
                           <div className="team-member-social">
-                            <a
+                            <Link
                               href="https://twitter.com/"
                               className="social-link w-inline-block"
                             >
@@ -531,8 +532,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3535414e0dc1597a9ad_icon-social-x.svg"
                                 alt="X (Twitter) icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="https://linkedin.com/"
                               className="social-link w-inline-block"
                             >
@@ -540,8 +541,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3545beeb32d99e4ea93_icon-social-linkedin.svg"
                                 alt="Linkedin icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="https://bluesky.com/"
                               className="social-link w-inline-block"
                             >
@@ -549,8 +550,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d35312fcde9b75ffb736_icon-social-bluesky.svg"
                                 alt="Bluesky icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               data-wf--arrow-hover-link--variant="base"
                               href="mailto:eva@website.com"
                               className="arrow-hover-link w-inline-block"
@@ -571,7 +572,7 @@ export default function Page() {
                               >
                                 eva@website.com
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                         <div className="team-member-bio">
@@ -604,7 +605,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div className="show-on-mobile">
-                  <a
+                  <Link
                     href="/team-members/eva-lindholm"
                     className="team-member w-inline-block"
                   >
@@ -621,7 +622,7 @@ export default function Page() {
                       <div>Eva Lindholm</div>
                       <div className="muted-text">Chief Experience Officer</div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div role="listitem" className="w-dyn-item">
@@ -670,7 +671,7 @@ export default function Page() {
                             </div>
                           </div>
                           <div className="team-member-social">
-                            <a
+                            <Link
                               href="https://twitter.com/"
                               className="social-link w-inline-block"
                             >
@@ -678,8 +679,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3535414e0dc1597a9ad_icon-social-x.svg"
                                 alt="X (Twitter) icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="https://linkedin.com/"
                               className="social-link w-inline-block"
                             >
@@ -687,8 +688,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3545beeb32d99e4ea93_icon-social-linkedin.svg"
                                 alt="Linkedin icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="https://bluesky.com/"
                               className="social-link w-inline-block"
                             >
@@ -696,8 +697,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d35312fcde9b75ffb736_icon-social-bluesky.svg"
                                 alt="Bluesky icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               data-wf--arrow-hover-link--variant="base"
                               href="mailto:thomas@website.com"
                               className="arrow-hover-link w-inline-block"
@@ -718,7 +719,7 @@ export default function Page() {
                               >
                                 thomas@website.com
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                         <div className="team-member-bio">
@@ -749,7 +750,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div className="show-on-mobile">
-                  <a
+                  <Link
                     href="/team-members/thomas-bergstrom"
                     className="team-member w-inline-block"
                   >
@@ -766,7 +767,7 @@ export default function Page() {
                       <div>Thomas Bergström</div>
                       <div className="muted-text">Client Partnerships</div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div role="listitem" className="w-dyn-item">
@@ -815,7 +816,7 @@ export default function Page() {
                             </div>
                           </div>
                           <div className="team-member-social">
-                            <a
+                            <Link
                               href="https://twitter.com/"
                               className="social-link w-inline-block"
                             >
@@ -823,8 +824,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3535414e0dc1597a9ad_icon-social-x.svg"
                                 alt="X (Twitter) icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="https://linkedin.com/"
                               className="social-link w-inline-block"
                             >
@@ -832,8 +833,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3545beeb32d99e4ea93_icon-social-linkedin.svg"
                                 alt="Linkedin icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="https://bluesky.com/"
                               className="social-link w-inline-block"
                             >
@@ -841,8 +842,8 @@ export default function Page() {
                                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d35312fcde9b75ffb736_icon-social-bluesky.svg"
                                 alt="Bluesky icon"
                               />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               data-wf--arrow-hover-link--variant="base"
                               href="mailto:mira@website.com"
                               className="arrow-hover-link w-inline-block"
@@ -863,7 +864,7 @@ export default function Page() {
                               >
                                 mira@website.com
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                         <div className="team-member-bio">
@@ -895,7 +896,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div className="show-on-mobile">
-                  <a
+                  <Link
                     href="/team-members/mira-chandler"
                     className="team-member w-inline-block"
                   >
@@ -912,7 +913,7 @@ export default function Page() {
                       <div>Mira Chandler</div>
                       <div className="muted-text">Head of Innovation</div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -999,7 +1000,7 @@ export default function Page() {
                   innovation to build lasting digital experiences.
                 </div>
               </div>
-              <a
+              <Link
                 data-wf--button--variant="white-large"
                 href="/company/contact-2"
                 className="button w-variant-521e6cc1-75a7-b354-2091-51e1cfdc804a w-inline-block"
@@ -1008,7 +1009,7 @@ export default function Page() {
                   <div className="button-text">Get in touch</div>
                   <div className="button-text">Get in touch</div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -152,7 +153,7 @@ export default function Page() {
                     <div className="service-item-contents">
                       <div className="service-item-text">
                         <div>
-                          <a
+                          <Link
                             href="/services/brand-strategy"
                             className="w-inline-block"
                           >
@@ -161,7 +162,7 @@ export default function Page() {
                                 Brand Strategy
                               </div>
                             </div>
-                          </a>
+                          </Link>
                           <div className="title-small service-item-description">
                             Transform your brand identity into a compelling
                             brand story that resonates with your audience. We
@@ -184,7 +185,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                      <a
+                      <Link
                         data-wf--button--variant="outlined"
                         href="/services/brand-strategy"
                         className="button w-variant-90b7551e-2f4d-fd9e-89eb-368bc1201380 w-inline-block"
@@ -197,9 +198,9 @@ export default function Page() {
                             More about this service
                           </div>
                         </div>
-                      </a>
+                      </Link>
                     </div>
-                    <a
+                    <Link
                       id="w-node-_3e64c8ee-9d04-b336-feae-6e991e1f6837-83c56baf"
                       href="/services/brand-strategy"
                       className="hover-image-link w-inline-block"
@@ -212,7 +213,7 @@ export default function Page() {
                         srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679847d190fdbc72467f1063_square-06-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679847d190fdbc72467f1063_square-06-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679847d190fdbc72467f1063_square-06-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679847d190fdbc72467f1063_square-06-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679847d190fdbc72467f1063_square-06.webp 1920w"
                         className="hover-image"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div role="listitem" className="w-dyn-item">
@@ -220,7 +221,7 @@ export default function Page() {
                     <div className="service-item-contents">
                       <div className="service-item-text">
                         <div>
-                          <a
+                          <Link
                             href="/services/messaging"
                             className="w-inline-block"
                           >
@@ -229,7 +230,7 @@ export default function Page() {
                                 Messaging
                               </div>
                             </div>
-                          </a>
+                          </Link>
                           <div className="title-small service-item-description">
                             Craft compelling communications that capture your
                             brand’s unique voice and connect with your target
@@ -252,7 +253,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                      <a
+                      <Link
                         data-wf--button--variant="outlined"
                         href="/services/messaging"
                         className="button w-variant-90b7551e-2f4d-fd9e-89eb-368bc1201380 w-inline-block"
@@ -265,9 +266,9 @@ export default function Page() {
                             More about this service
                           </div>
                         </div>
-                      </a>
+                      </Link>
                     </div>
-                    <a
+                    <Link
                       id="w-node-_3e64c8ee-9d04-b336-feae-6e991e1f6837-83c56baf"
                       href="/services/messaging"
                       className="hover-image-link w-inline-block"
@@ -280,7 +281,7 @@ export default function Page() {
                         srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679849c401443d2a240eab0c_square-08-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679849c401443d2a240eab0c_square-08-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679849c401443d2a240eab0c_square-08-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679849c401443d2a240eab0c_square-08-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679849c401443d2a240eab0c_square-08.webp 1920w"
                         className="hover-image"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div role="listitem" className="w-dyn-item">
@@ -288,7 +289,7 @@ export default function Page() {
                     <div className="service-item-contents">
                       <div className="service-item-text">
                         <div>
-                          <a
+                          <Link
                             href="/services/ux-design"
                             className="w-inline-block"
                           >
@@ -297,7 +298,7 @@ export default function Page() {
                                 UX Design
                               </div>
                             </div>
-                          </a>
+                          </Link>
                           <div className="title-small service-item-description">
                             Create intuitive digital experiences that delight
                             users and drive results. Our UX design solutions
@@ -320,7 +321,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                      <a
+                      <Link
                         data-wf--button--variant="outlined"
                         href="/services/ux-design"
                         className="button w-variant-90b7551e-2f4d-fd9e-89eb-368bc1201380 w-inline-block"
@@ -333,9 +334,9 @@ export default function Page() {
                             More about this service
                           </div>
                         </div>
-                      </a>
+                      </Link>
                     </div>
-                    <a
+                    <Link
                       id="w-node-_3e64c8ee-9d04-b336-feae-6e991e1f6837-83c56baf"
                       href="/services/ux-design"
                       className="hover-image-link w-inline-block"
@@ -348,7 +349,7 @@ export default function Page() {
                         srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984c5c05fe87e1450e5d00_square-07-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984c5c05fe87e1450e5d00_square-07-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984c5c05fe87e1450e5d00_square-07-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984c5c05fe87e1450e5d00_square-07-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984c5c05fe87e1450e5d00_square-07.webp 1920w"
                         className="hover-image"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div role="listitem" className="w-dyn-item">
@@ -356,7 +357,7 @@ export default function Page() {
                     <div className="service-item-contents">
                       <div className="service-item-text">
                         <div>
-                          <a
+                          <Link
                             href="/services/integration"
                             className="w-inline-block"
                           >
@@ -365,7 +366,7 @@ export default function Page() {
                                 Integration
                               </div>
                             </div>
-                          </a>
+                          </Link>
                           <div className="title-small service-item-description">
                             Connect your digital ecosystem to streamline
                             operations and enhance user experience. We implement
@@ -388,7 +389,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                      <a
+                      <Link
                         data-wf--button--variant="outlined"
                         href="/services/integration"
                         className="button w-variant-90b7551e-2f4d-fd9e-89eb-368bc1201380 w-inline-block"
@@ -401,9 +402,9 @@ export default function Page() {
                             More about this service
                           </div>
                         </div>
-                      </a>
+                      </Link>
                     </div>
-                    <a
+                    <Link
                       id="w-node-_3e64c8ee-9d04-b336-feae-6e991e1f6837-83c56baf"
                       href="/services/integration"
                       className="hover-image-link w-inline-block"
@@ -416,7 +417,7 @@ export default function Page() {
                         srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984d17a11c968c3a5d8868_square-09-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984d17a11c968c3a5d8868_square-09-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984d17a11c968c3a5d8868_square-09-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984d17a11c968c3a5d8868_square-09-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984d17a11c968c3a5d8868_square-09.webp 1920w"
                         className="hover-image"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -445,7 +446,7 @@ export default function Page() {
                     Learn about our team and culture
                   </div>
                 </div>
-                <a
+                <Link
                   data-wf--button--variant="large"
                   href="/company/about-1"
                   className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
@@ -454,7 +455,7 @@ export default function Page() {
                     <div className="button-text">About us</div>
                     <div className="button-text">About us</div>
                   </div>
-                </a>
+                </Link>
               </div>
               <img
                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6792cee8eb815a96e2198a20_landscape-02.webp"

@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -291,17 +292,17 @@ export default function Page() {
                       <br />
                       <br />
                       From our studios in Copenhagen, London, and Amsterdam,
-                      we've built a culture that emphasizes both individual
+                      we&apos;ve built a culture that emphasizes both individual
                       craft and collective innovation, enabling us to tackle
                       complex challenges with fresh thinking and technical
-                      precision. What sets us apart isn't just our range of
-                      skills—it's how we combine them. Our strategists work
+                      precision. What sets us apart isn&apos;t just our range of
+                      skills—it&apos;s how we combine them. Our strategists work
                       alongside engineers, our designers collaborate with data
                       scientists, and our researchers partner with creative
                       directors.
                     </div>
                   </div>
-                  <a
+                  <Link
                     data-wf--button--variant="outlined"
                     href="/company/team"
                     className="button w-variant-90b7551e-2f4d-fd9e-89eb-368bc1201380 w-inline-block"
@@ -310,7 +311,7 @@ export default function Page() {
                       <div className="button-text">Meet the team</div>
                       <div className="button-text">Meet the team</div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="hide-on-mobile">
@@ -439,7 +440,7 @@ export default function Page() {
                       1364 København K<br />
                       Denmark
                     </div>
-                    <a
+                    <Link
                       data-wf--arrow-hover-link--variant="white"
                       href="#"
                       className="arrow-hover-link w-variant-20ae16cd-e32b-9598-6279-b8d1d7fabfd3 w-inline-block"
@@ -463,7 +464,7 @@ export default function Page() {
                       >
                         europe@website.com
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="location-box">
@@ -483,7 +484,7 @@ export default function Page() {
                       <br />
                       United Kingdom
                     </div>
-                    <a
+                    <Link
                       data-wf--arrow-hover-link--variant="white"
                       href="#"
                       className="arrow-hover-link w-variant-20ae16cd-e32b-9598-6279-b8d1d7fabfd3 w-inline-block"
@@ -507,7 +508,7 @@ export default function Page() {
                       >
                         uk@website.com
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="location-box">
@@ -527,7 +528,7 @@ export default function Page() {
                       <br />
                       USA
                     </div>
-                    <a
+                    <Link
                       data-wf--arrow-hover-link--variant="white"
                       href="#"
                       className="arrow-hover-link w-variant-20ae16cd-e32b-9598-6279-b8d1d7fabfd3 w-inline-block"
@@ -536,7 +537,7 @@ export default function Page() {
                         className="arrow-hover-icon-wrapper"
                         style={{
                           width: 0,
-                          opacity: 0
+                          opacity: 0,
                         }}
                       >
                         <img
@@ -551,7 +552,7 @@ export default function Page() {
                       >
                         usa@website.com
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -577,10 +578,10 @@ export default function Page() {
                     Ready for the next step?
                   </div>
                   <div className="title-small">
-                    We'd love to hear about your project
+                    We&apos;d love to hear about your project
                   </div>
                 </div>
-                <a
+                <Link
                   data-wf--button--variant="large"
                   href="/company/contact-3"
                   className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
@@ -589,7 +590,7 @@ export default function Page() {
                     <div className="button-text">Start Planner</div>
                     <div className="button-text">Start Planner</div>
                   </div>
-                </a>
+                </Link>
               </div>
               <img
                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6792cee8eb815a96e2198a20_landscape-02.webp"

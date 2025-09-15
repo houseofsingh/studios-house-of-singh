@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type GetInTouchProps = {
   title: string;
   cta: {
@@ -23,7 +25,7 @@ export default function GetInTouch(mock: GetInTouchProps) {
             <div className="content-long centered">
               <div className="title-small">{mock.title}</div>
             </div>
-            <a
+            <Link
               data-wf--button--variant="large"
               href={mock.cta.href}
               className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
@@ -32,7 +34,7 @@ export default function GetInTouch(mock: GetInTouchProps) {
                 <div className="button-text">{mock.cta.title}</div>
                 <div className="button-text">{mock.cta.title}</div>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

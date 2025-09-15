@@ -3,6 +3,7 @@ import Header from "@/components/hos/header";
 import CaseStudyTile from "@/components/hos/sections/case-study-tile";
 import { Marquee } from "@/components/magicui/marquee";
 import { caseStudies, CaseStudy } from "@/lib/data/case-studies";
+import Link from "next/link";
 
 export type PageData = {
   title: string;
@@ -103,7 +104,7 @@ export default function Page() {
                 ))}
               </Marquee>
               <div className="title-large">{page.cta.title}</div>
-              <a
+              <Link
                 data-wf--button--variant="white-large"
                 href={page.cta.button.href}
                 className="button w-variant-521e6cc1-75a7-b354-2091-51e1cfdc804a w-inline-block"
@@ -112,7 +113,7 @@ export default function Page() {
                   <div className="button-text">{page.cta.button.label}</div>
                   <div className="button-text">{page.cta.button.label}</div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

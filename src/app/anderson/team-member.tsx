@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -9,12 +10,15 @@ export default function Page() {
         <div className="container---main">
           <div className="content-long align-center">
             <div className="team-member-contents">
-              <a href="/company/team" className="back-to-team w-inline-block">
+              <Link
+                href="/company/team"
+                className="back-to-team w-inline-block"
+              >
                 <img
                   src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/67a4312ccab3e6928ef7a96b_interface-icon-cross-small.svg"
                   alt="cross icon"
                 />
-              </a>
+              </Link>
               <div
                 className="fade-in-first"
                 style={{
@@ -32,7 +36,7 @@ export default function Page() {
                     </h2>
                   </div>
                   <div className="team-member-social">
-                    <a
+                    <Link
                       href="https://twitter.com/"
                       className="social-link w-inline-block"
                     >
@@ -40,8 +44,8 @@ export default function Page() {
                         src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3535414e0dc1597a9ad_icon-social-x.svg"
                         alt="X (Twitter) icon"
                       />
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="https://linkedin.com/"
                       className="social-link w-inline-block"
                     >
@@ -49,8 +53,8 @@ export default function Page() {
                         src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d3545beeb32d99e4ea93_icon-social-linkedin.svg"
                         alt="Linkedin icon"
                       />
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="https://bluesky.com/"
                       className="social-link w-inline-block"
                     >
@@ -58,8 +62,8 @@ export default function Page() {
                         src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6791d35312fcde9b75ffb736_icon-social-bluesky.svg"
                         alt="Bluesky icon"
                       />
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       data-wf--arrow-hover-link--variant="base"
                       href="mailto:marcus@website.com"
                       className="arrow-hover-link w-inline-block"
@@ -80,7 +84,7 @@ export default function Page() {
                       >
                         marcus@website.com
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -136,7 +140,7 @@ export default function Page() {
                   <div className="collection-list-wrapper w-dyn-list">
                     <div role="list" className="author-blog-grid w-dyn-items">
                       <div role="listitem" className="w-dyn-item">
-                        <a
+                        <Link
                           href="#"
                           className="article-small-horizontal w-inline-block"
                         >
@@ -162,7 +166,7 @@ export default function Page() {
                               January 4, 2025
                             </div>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

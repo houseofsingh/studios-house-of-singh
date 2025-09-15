@@ -144,7 +144,7 @@ function SectionOne() {
                                     role="listitem"
                                     className="w-dyn-item"
                                   >
-                                    <a
+                                    <Link
                                       href={dynItem.href}
                                       className="wide-project inside-slider w-inline-block"
                                     >
@@ -171,7 +171,7 @@ function SectionOne() {
                                           </div>
                                         </div>
                                       </div>
-                                    </a>
+                                    </Link>
                                   </div>
                                 ))}
                               </div>
@@ -252,7 +252,7 @@ function SectionTwo() {
               <div role="list" className="service-grid w-dyn-items">
                 {mock.items.map((item, index) => (
                   <div key={index} role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href={item.href}
                       className="service-grid-item w-inline-block"
                     >
@@ -279,7 +279,7 @@ function SectionTwo() {
                           <div className="body-text">{item.description}</div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -397,7 +397,7 @@ function SectionFour() {
                           {mock.metric.description}
                         </div>
                       </div>
-                      <a
+                      <Link
                         data-wf--button--variant="white-large"
                         href={mock.cta.href}
                         className="button w-variant-521e6cc1-75a7-b354-2091-51e1cfdc804a w-inline-block"
@@ -406,10 +406,10 @@ function SectionFour() {
                           <div className="button-text">{mock.cta.title}</div>
                           <div className="button-text">{mock.cta.title}</div>
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
-                  <a
+                  <Link
                     href={mock.cta.href}
                     className="hover-image-link w-inline-block"
                   >
@@ -424,7 +424,7 @@ function SectionFour() {
                     <div className="case-study-badge">
                       <img src={mock.badge} loading="lazy" alt="" />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -577,7 +577,7 @@ function SectionSix() {
               </div>
             </Marquee>
             <div className="title-large">{mock.title}</div>
-            <a
+            <Link
               data-wf--button--variant="white-large"
               href={mock.cta.href}
               className="button w-variant-521e6cc1-75a7-b354-2091-51e1cfdc804a w-inline-block"
@@ -586,7 +586,7 @@ function SectionSix() {
                 <div className="button-text">{mock.cta.title}</div>
                 <div className="button-text">{mock.cta.title}</div>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

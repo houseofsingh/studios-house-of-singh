@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
   return null;
   return (
@@ -12,19 +14,19 @@ export default function Header() {
     >
       <div className="container---main navbar-container">
         <div className="navbar-row">
-          <a href="/" className="nav-logo w-inline-block">
+          <Link href="/" className="nav-logo w-inline-block">
             <img
               src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/678eeb274a1ba3984417d241_Logo.svg"
               alt="Company Logo"
               className="main-nav-logo white"
             />
-          </a>
+          </Link>
           <div className="nav-menu-wrapper">
             <nav role="navigation" className="nav-menu w-nav-menu">
               <div className="nav-links">
-                <a href="/" className="nav-link">
+                <Link href="/" className="nav-link">
                   Overview
-                </a>
+                </Link>
                 <div
                   data-hover="true"
                   data-delay={400}
@@ -61,96 +63,96 @@ export default function Header() {
                         <div className="mega-dropdown-columns">
                           <div className="mega-dropdown-column">
                             <div className="dropdown-title">Pages</div>
-                            <a
+                            <Link
                               href="/home/home-1"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>Home 1</div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="/home/home-2"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>Home 2</div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="/home/home-3"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>Home 3</div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="/company/about-1"
                               aria-current="page"
                               className="mega-dropdown-link w-inline-block w--current"
                               tabIndex={0}
                             >
                               <div>About 1</div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="/company/about-2"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>About 2</div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="/company/about-3"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>About 3</div>
-                            </a>
+                            </Link>
                           </div>
                           <div className="mega-dropdown-column">
                             <div className="dropdown-title">Pages</div>
-                            <a
+                            <Link
                               href="/contact"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>Contact 1</div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="/company/contact-2"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>Contact 2</div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="/company/contact-3"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>Contact 3</div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="/company/services"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>Services</div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="/company/team"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>Our Team</div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="/"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>All 40 Pages</div>
-                            </a>
+                            </Link>
                           </div>
-                          <a
+                          <Link
                             id="w-node-_7d7ff699-ddab-7447-37ef-16cfe48bdb82-f2dc2cc2"
                             href="/"
                             className="mega-dropdown-cta w-inline-block"
@@ -171,33 +173,33 @@ export default function Header() {
                                 Andersen comes with over 40 useful pages.
                               </div>
                             </div>
-                          </a>
+                          </Link>
                           <div
                             id="w-node-_7d7ff699-ddab-7447-37ef-16cfe48bdb8a-f2dc2cc2"
                             className="mega-dropdown-column"
                           >
                             <div className="dropdown-title">Info</div>
-                            <a
+                            <Link
                               href="/template/licenses"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>Licenses</div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="/template/style-guide"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>Style Guide</div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                               href="/template/changelog"
                               className="mega-dropdown-link w-inline-block"
                               tabIndex={0}
                             >
                               <div>Changelog</div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -236,40 +238,40 @@ export default function Header() {
                         transformStyle: "preserve-3d",
                       }}
                     >
-                      <a
+                      <Link
                         href="/template/style-guide"
                         className="dropdown-link"
                         tabIndex={0}
                       >
                         Style guide
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="/template/licenses"
                         className="dropdown-link"
                         tabIndex={0}
                       >
                         Licenses
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="/template/changelog"
                         className="dropdown-link"
                         tabIndex={0}
                       >
                         Changelog
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="https://mediumrare.shop/?utm_source=webflow.io&utm_medium=template-demo&utm_campaign=Andersen%20Webflow%20Demo&utm_content=Information%20Dropdown"
                         target="_blank"
                         className="dropdown-link"
                         tabIndex={0}
                       >
                         More Webflow templates
-                      </a>
+                      </Link>
                     </div>
                   </nav>
                 </div>
                 <div className="nav-menu-button">
-                  <a
+                  <Link
                     data-wf--button--variant="large"
                     href="https://mmra.re/purchaseandersen"
                     target="_blank"
@@ -279,7 +281,7 @@ export default function Header() {
                       <div className="button-text">Buy now</div>
                       <div className="button-text">Buy now</div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </nav>
@@ -417,7 +419,7 @@ quickCheckoutEnabled
               className="w-commerce-commercecartwrapper"
               data-node-type="commerce-cart-wrapper"
             >
-              <a
+              <Link
                 className="w-commerce-commercecartopenlink nav-link cart-link w-inline-block"
                 role="button"
                 aria-haspopup="dialog"
@@ -436,7 +438,7 @@ quickCheckoutEnabled
                   </div>
                   <div>)</div>
                 </div>
-              </a>
+              </Link>
               <div
                 style={{ display: "none" }}
                 className="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-modal"
@@ -451,7 +453,8 @@ quickCheckoutEnabled
                     <h4 className="w-commerce-commercecartheading large-text">
                       Your Cart
                     </h4>
-                    <a
+                    <Link
+                      href="#"
                       className="w-commerce-commercecartcloselink close-button w-inline-block"
                       role="button"
                       aria-label="Close cart"
@@ -462,7 +465,7 @@ quickCheckoutEnabled
                         alt="Close menu icon"
                         className="checkout-close-icon"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="w-commerce-commercecartformwrapper">
                     <form
@@ -498,7 +501,7 @@ quickCheckoutEnabled
                               data-wf-collection="database.commerceOrder.userItems.0.product.f_sku_properties_3dr"
                               data-wf-template-id="wf-template-1f32b2ef-5d23-d0af-1824-dc4af2dc2d07"
                             />
-                            <a
+                            <Link
                               href="#"
                               role="button"
                               data-wf-bindings="%5B%7B%22data-commerce-sku-id%22%3A%7B%22type%22%3A%22ItemRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems.0.sku.id%22%7D%7D%5D"
@@ -508,7 +511,7 @@ quickCheckoutEnabled
                               aria-label="Remove item from cart"
                             >
                               <div>Remove</div>
-                            </a>
+                            </Link>
                           </div>
                           <input
                             aria-label="Update quantity"
@@ -546,7 +549,8 @@ quickCheckoutEnabled
                             data-node-type="commerce-cart-quick-checkout-actions"
                             style={{ display: "none" }}
                           >
-                            <a
+                            <Link
+                              href="#"
                               data-node-type="commerce-cart-apple-pay-button"
                               role="button"
                               aria-label="Apple Pay"
@@ -562,8 +566,9 @@ quickCheckoutEnabled
                               tabIndex={0}
                             >
                               <div />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
+                              href="#"
                               data-node-type="commerce-cart-quick-checkout-button"
                               role="button"
                               tabIndex={0}
@@ -645,9 +650,9 @@ quickCheckoutEnabled
                                 </g>
                               </svg>
                               <div>Pay with browser.</div>
-                            </a>
+                            </Link>
                           </div>
-                          <a
+                          <Link
                             href="/checkout"
                             //   value="Continue to Checkout"
                             className="w-commerce-commercecartcheckoutbutton button"
@@ -655,7 +660,7 @@ quickCheckoutEnabled
                             data-node-type="cart-checkout-button"
                           >
                             Continue to Checkout
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </form>
@@ -714,7 +719,7 @@ quickCheckoutEnabled
               </div>
             </div>
             <div className="nav-button-wrapper">
-              <a
+              <Link
                 data-wf--button--variant="default"
                 href="https://mmra.re/purchaseandersen"
                 target="_blank"
@@ -742,7 +747,7 @@ quickCheckoutEnabled
                     Buy template
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

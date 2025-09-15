@@ -2,6 +2,7 @@ import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
 import { ArticleTile } from "@/components/hos/sections/article-tile";
 import Markdown from "@/components/hos/sections/hos-markdown";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -49,19 +50,19 @@ function SectionOne() {
             >
               <div className="article-title">
                 <div className="article-meta">
-                  <a
+                  <Link
                     href={`/blog-categories/${mock.category.slug}`}
                     className="hover-link text-white"
                   >
                     {mock.category.title}
-                  </a>
+                  </Link>
                   <div className="muted-text">{mock.date}</div>
                 </div>
                 <div className="content-medium">
                   <h1 className="title-large long-text">{mock.title}</h1>
                 </div>
               </div>
-              <a
+              <Link
                 href={`/team-members/${mock.teamMember.slug}`}
                 className="article-author w-inline-block"
               >
@@ -77,7 +78,7 @@ function SectionOne() {
                   <div>By&nbsp;</div>
                   <div>{mock.teamMember.fullName}</div>
                 </div>
-              </a>
+              </Link>
             </div>
             <img
               src={mock.src}

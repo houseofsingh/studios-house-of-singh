@@ -62,14 +62,14 @@ export default function Page() {
         className="grid grid-cols-[auto_1fr] relative"
       >
         <TabsList className="grid mx-3 my-20 sticky top-20 h-max">
-          {pages.map(({ name, isDone }, index) => (
+          {pages.map(({ name, isDone }) => (
             <TabsTrigger key={name} value={name} className="justify-start">
               {name} {isDone && <CheckIcon />}
             </TabsTrigger>
           ))}
         </TabsList>
 
-        {pages.map(({ name, page: Component }, index) => (
+        {pages.map(({ name, page: Component }) => (
           <TabsContent key={name} value={name} className="border-l">
             <Component />
           </TabsContent>

@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -23,12 +24,12 @@ export default function Page() {
               >
                 <div className="article-title">
                   <div className="article-meta">
-                    <a
+                    <Link
                       href="/blog-categories/insight"
                       className="hover-link text-white"
                     >
                       Insight
-                    </a>
+                    </Link>
                     <div className="muted-text">January 8, 2025</div>
                   </div>
                   <div className="content-medium">
@@ -37,7 +38,7 @@ export default function Page() {
                     </h1>
                   </div>
                 </div>
-                <a
+                <Link
                   href="/team-members/eva-lindholm"
                   className="article-author w-inline-block"
                 >
@@ -53,7 +54,7 @@ export default function Page() {
                     <div>By&nbsp;</div>
                     <div>Eva Lindholm</div>
                   </div>
-                </a>
+                </Link>
               </div>
               <img
                 src="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae97b738338ac7d2d551e_blog-07.webp"
@@ -250,7 +251,7 @@ export default function Page() {
                 <div role="list" className="blog-grid w-dyn-items">
                   <div role="listitem" className="w-dyn-item">
                     <div className="article-grid-item">
-                      <a
+                      <Link
                         href="/post/creative-breakthroughs-happen-under-pressure"
                         className="hover-image-link w-inline-block"
                       >
@@ -262,8 +263,8 @@ export default function Page() {
                           srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae9535f31cf9bb5d5787a_blog-01-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae9535f31cf9bb5d5787a_blog-01-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae9535f31cf9bb5d5787a_blog-01-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae9535f31cf9bb5d5787a_blog-01-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae9535f31cf9bb5d5787a_blog-01.webp 1920w"
                           className="hover-image"
                         />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         data-wf--arrow-hover-link--variant="base"
                         href="/blog-categories/news"
                         className="arrow-hover-link w-inline-block"
@@ -284,13 +285,13 @@ export default function Page() {
                         >
                           News
                         </div>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="/post/creative-breakthroughs-happen-under-pressure"
                         className="large-text"
                       >
                         Creative breakthroughs happen under pressure
-                      </a>
+                      </Link>
                       <div className="small-text muted-text">
                         January 7, 2025
                       </div>
@@ -298,7 +299,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="article-grid-item">
-                      <a
+                      <Link
                         href="/post/what-we-learned-from-10-years-of-design-talks"
                         className="hover-image-link w-inline-block"
                       >
@@ -310,8 +311,8 @@ export default function Page() {
                           srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae92437db3a669eedddb6_blog-02-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae92437db3a669eedddb6_blog-02-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae92437db3a669eedddb6_blog-02-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae92437db3a669eedddb6_blog-02-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae92437db3a669eedddb6_blog-02.webp 1920w"
                           className="hover-image"
                         />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         data-wf--arrow-hover-link--variant="base"
                         href="/blog-categories/insight"
                         className="arrow-hover-link w-inline-block"
@@ -332,13 +333,13 @@ export default function Page() {
                         >
                           Insight
                         </div>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="/post/what-we-learned-from-10-years-of-design-talks"
                         className="large-text"
                       >
                         What we learned from 10 years of design talks
-                      </a>
+                      </Link>
                       <div className="small-text muted-text">
                         January 6, 2025
                       </div>
@@ -346,7 +347,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="article-grid-item">
-                      <a
+                      <Link
                         href="/post/this-shift-in-design-systems-will-change-everything"
                         className="hover-image-link w-inline-block"
                       >
@@ -358,8 +359,8 @@ export default function Page() {
                           srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae8fbd683fa01c711ea64_blog-10-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae8fbd683fa01c711ea64_blog-10-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae8fbd683fa01c711ea64_blog-10-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae8fbd683fa01c711ea64_blog-10-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae8fbd683fa01c711ea64_blog-10.webp 1920w"
                           className="hover-image"
                         />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         data-wf--arrow-hover-link--variant="base"
                         href="/blog-categories/news"
                         className="arrow-hover-link w-inline-block"
@@ -380,13 +381,13 @@ export default function Page() {
                         >
                           News
                         </div>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="/post/this-shift-in-design-systems-will-change-everything"
                         className="large-text"
                       >
                         This shift in design systems will change everything
-                      </a>
+                      </Link>
                       <div className="small-text muted-text">
                         January 5, 2025
                       </div>
@@ -394,7 +395,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="article-grid-item">
-                      <a
+                      <Link
                         href="/post/how-we-helped-hermosa-rethink-luxury-packaging"
                         className="hover-image-link w-inline-block"
                       >
@@ -406,8 +407,8 @@ export default function Page() {
                           srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae73edd8ad63a792179f0_blog-04-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae73edd8ad63a792179f0_blog-04-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae73edd8ad63a792179f0_blog-04-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae73edd8ad63a792179f0_blog-04-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae73edd8ad63a792179f0_blog-04.webp 1920w"
                           className="hover-image"
                         />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         data-wf--arrow-hover-link--variant="base"
                         href="/blog-categories/insight"
                         className="arrow-hover-link w-inline-block"
@@ -428,13 +429,13 @@ export default function Page() {
                         >
                           Insight
                         </div>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="/post/how-we-helped-hermosa-rethink-luxury-packaging"
                         className="large-text"
                       >
                         How we helped Hermosa rethink luxury packaging
-                      </a>
+                      </Link>
                       <div className="small-text muted-text">
                         January 4, 2025
                       </div>

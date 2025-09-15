@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -23,7 +24,7 @@ export default function Page() {
                     Join our growing team of ambitious problem solvers.
                   </h1>
                 </div>
-                <a
+                <Link
                   data-wf--button--variant="large"
                   href="#open-roles"
                   className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
@@ -32,7 +33,7 @@ export default function Page() {
                     <div className="button-text">See open roles</div>
                     <div className="button-text">See open roles</div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div
@@ -214,7 +215,7 @@ export default function Page() {
               <div className="careers-collection w-dyn-list">
                 <div role="list" className="w-dyn-items">
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/careers/strategy-director"
                       className="career-link w-inline-block"
                     >
@@ -234,10 +235,10 @@ export default function Page() {
                           transformStyle: "preserve-3d",
                         }}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/careers/motion-design-specialist"
                       className="career-link w-inline-block"
                     >
@@ -257,10 +258,10 @@ export default function Page() {
                           transformStyle: "preserve-3d",
                         }}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/careers/senior-product-designer"
                       className="career-link w-inline-block"
                     >
@@ -280,10 +281,10 @@ export default function Page() {
                           transformStyle: "preserve-3d",
                         }}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/careers/brand-design-lead"
                       className="career-link w-inline-block"
                     >
@@ -303,10 +304,10 @@ export default function Page() {
                           transformStyle: "preserve-3d",
                         }}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/careers/design-technologist"
                       className="career-link w-inline-block"
                     >
@@ -326,10 +327,10 @@ export default function Page() {
                           transformStyle: "preserve-3d",
                         }}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/careers/content-strategy-lead"
                       className="career-link w-inline-block"
                     >
@@ -349,7 +350,7 @@ export default function Page() {
                           transformStyle: "preserve-3d",
                         }}
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -375,7 +376,7 @@ export default function Page() {
                   opening? We’d like to hear from you.
                 </div>
               </div>
-              <a
+              <Link
                 data-wf--button--variant="large"
                 href="/company/contact-2"
                 className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
@@ -384,7 +385,7 @@ export default function Page() {
                   <div className="button-text">Get in touch</div>
                   <div className="button-text">Get in touch</div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -24,7 +25,7 @@ export default function Page() {
                     strategy.
                   </h1>
                 </div>
-                <a
+                <Link
                   data-wf--button--variant="large"
                   href="/work/work-2"
                   className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
@@ -33,7 +34,7 @@ export default function Page() {
                     <div className="button-text">See our work</div>
                     <div className="button-text">See our work</div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div
@@ -66,7 +67,7 @@ export default function Page() {
                     <div className="w-dyn-list">
                       <div role="list" className="w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
-                          <a
+                          <Link
                             href="/projects/invarion"
                             className="wide-project inside-slider w-inline-block"
                           >
@@ -94,7 +95,7 @@ export default function Page() {
                                 </div>
                               </div>
                             </div>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -108,7 +109,7 @@ export default function Page() {
                     <div className="w-dyn-list">
                       <div role="list" className="w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
-                          <a
+                          <Link
                             href="/projects/dunham-co"
                             className="wide-project inside-slider w-inline-block"
                           >
@@ -136,7 +137,7 @@ export default function Page() {
                                 </div>
                               </div>
                             </div>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -162,7 +163,7 @@ export default function Page() {
                     <div className="w-dyn-list">
                       <div role="list" className="w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
-                          <a
+                          <Link
                             href="/projects/invarion"
                             className="wide-project inside-slider w-inline-block"
                           >
@@ -190,7 +191,7 @@ export default function Page() {
                                 </div>
                               </div>
                             </div>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -204,7 +205,7 @@ export default function Page() {
                     <div className="w-dyn-list">
                       <div role="list" className="w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
-                          <a
+                          <Link
                             href="/projects/dunham-co"
                             className="wide-project inside-slider w-inline-block"
                           >
@@ -232,7 +233,7 @@ export default function Page() {
                                 </div>
                               </div>
                             </div>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -487,7 +488,7 @@ export default function Page() {
               <div className="service-grid-collection w-dyn-list">
                 <div role="list" className="service-grid w-dyn-items">
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/services/brand-strategy"
                       className="service-grid-item w-inline-block"
                     >
@@ -519,10 +520,10 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/services/messaging"
                       className="service-grid-item w-inline-block"
                     >
@@ -554,10 +555,10 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/services/ux-design"
                       className="service-grid-item w-inline-block"
                     >
@@ -589,10 +590,10 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/services/integration"
                       className="service-grid-item w-inline-block"
                     >
@@ -624,7 +625,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -715,7 +716,7 @@ export default function Page() {
                             quarter
                           </div>
                         </div>
-                        <a
+                        <Link
                           data-wf--button--variant="white-large"
                           href="/case-studies/lucident"
                           className="button w-variant-521e6cc1-75a7-b354-2091-51e1cfdc804a w-inline-block"
@@ -724,10 +725,10 @@ export default function Page() {
                             <div className="button-text">Read Case Study</div>
                             <div className="button-text">Read Case Study</div>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
-                    <a
+                    <Link
                       href="/case-studies/lucident"
                       className="hover-image-link w-inline-block"
                     >
@@ -746,7 +747,7 @@ export default function Page() {
                           alt=""
                         />
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1202,7 +1203,7 @@ export default function Page() {
               <div className="title-large">
                 Working in over 20 international markets
               </div>
-              <a
+              <Link
                 data-wf--button--variant="white-large"
                 href="/contact"
                 className="button w-variant-521e6cc1-75a7-b354-2091-51e1cfdc804a w-inline-block"
@@ -1211,7 +1212,7 @@ export default function Page() {
                   <div className="button-text">Get in touch</div>
                   <div className="button-text">Get in touch</div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

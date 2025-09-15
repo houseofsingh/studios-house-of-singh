@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -29,7 +30,7 @@ export default function Page() {
                 <div className="w-dyn-list">
                   <div role="list" className="tags w-dyn-items">
                     <div role="listitem" className="w-dyn-item">
-                      <a
+                      <Link
                         href="/services/brand-strategy"
                         className="tag-link w-inline-block"
                       >
@@ -44,10 +45,10 @@ export default function Page() {
                           />
                         </div>
                         <div>Brand Strategy</div>
-                      </a>
+                      </Link>
                     </div>
                     <div role="listitem" className="w-dyn-item">
-                      <a
+                      <Link
                         href="/services/messaging"
                         className="tag-link w-inline-block"
                       >
@@ -62,7 +63,7 @@ export default function Page() {
                           />
                         </div>
                         <div>Messaging</div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -86,7 +87,7 @@ export default function Page() {
                   srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984773013003adf0f88806_project-01-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984773013003adf0f88806_project-01-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984773013003adf0f88806_project-01-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984773013003adf0f88806_project-01-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984773013003adf0f88806_project-01.webp 1920w"
                   className="project-hero-image"
                 />
-                <a
+                <Link
                   href="#"
                   className="video-link w-inline-block w-lightbox"
                   aria-label="open lightbox"
@@ -98,7 +99,7 @@ export default function Page() {
                     className="play-video-icon"
                   />
                   <div>Watch Video</div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -127,7 +128,7 @@ export default function Page() {
                 </div>
                 <div className="project-meta-item">
                   <div className="meta-label">Website</div>
-                  <a
+                  <Link
                     data-wf--arrow-hover-link--variant="base"
                     href="https://webflow.com/"
                     className="arrow-hover-link w-inline-block"
@@ -145,7 +146,7 @@ export default function Page() {
                     <div className="arrow-link-text" style={{ opacity: "0.5" }}>
                       marcopierre.co
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="project-summary-text-wrapper">
@@ -178,7 +179,7 @@ export default function Page() {
                   role="listitem"
                   className="project-image-item w-dyn-item w-dyn-repeater-item"
                 >
-                  <a
+                  <Link
                     href="#"
                     className="hover-image-link w-inline-block w-lightbox"
                     aria-label="open lightbox"
@@ -192,13 +193,13 @@ export default function Page() {
                       srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798463f9c1f979fa6d2abcf_project-inner-03-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798463f9c1f979fa6d2abcf_project-inner-03-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798463f9c1f979fa6d2abcf_project-inner-03-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798463f9c1f979fa6d2abcf_project-inner-03-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798463f9c1f979fa6d2abcf_project-inner-03.webp 1920w"
                       className="hover-image"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div
                   role="listitem"
                   className="project-image-item w-dyn-item w-dyn-repeater-item"
                 >
-                  <a
+                  <Link
                     href="#"
                     className="hover-image-link w-inline-block w-lightbox"
                     aria-label="open lightbox"
@@ -212,7 +213,7 @@ export default function Page() {
                       srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798463f0db7a7b8ab25c669_project-inner-05-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798463f0db7a7b8ab25c669_project-inner-05-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798463f0db7a7b8ab25c669_project-inner-05-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798463f0db7a7b8ab25c669_project-inner-05-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798463f0db7a7b8ab25c669_project-inner-05.webp 1920w"
                       className="hover-image"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="w-dyn-hide w-dyn-empty">
@@ -269,7 +270,7 @@ export default function Page() {
                   role="listitem"
                   className="project-image-item w-dyn-item w-dyn-repeater-item"
                 >
-                  <a
+                  <Link
                     href="#"
                     className="hover-image-link w-inline-block w-lightbox"
                     aria-label="open lightbox"
@@ -283,13 +284,13 @@ export default function Page() {
                       srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798464c04342ac1a49502cc_project-inner-01-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798464c04342ac1a49502cc_project-inner-01-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798464c04342ac1a49502cc_project-inner-01-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798464c04342ac1a49502cc_project-inner-01-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798464c04342ac1a49502cc_project-inner-01.webp 1920w"
                       className="hover-image"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div
                   role="listitem"
                   className="project-image-item w-dyn-item w-dyn-repeater-item"
                 >
-                  <a
+                  <Link
                     href="#"
                     className="hover-image-link w-inline-block w-lightbox"
                     aria-label="open lightbox"
@@ -303,7 +304,7 @@ export default function Page() {
                       srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798464c4d4eec8d3338e65e_project-inner-04-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798464c4d4eec8d3338e65e_project-inner-04-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798464c4d4eec8d3338e65e_project-inner-04-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798464c4d4eec8d3338e65e_project-inner-04-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/6798464c4d4eec8d3338e65e_project-inner-04.webp 1920w"
                       className="hover-image"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="w-dyn-hide w-dyn-empty">
@@ -364,7 +365,7 @@ export default function Page() {
                   role="listitem"
                   className="project-image-item w-dyn-item w-dyn-repeater-item"
                 >
-                  <a
+                  <Link
                     href="#"
                     className="hover-image-link w-inline-block w-lightbox"
                     aria-label="open lightbox"
@@ -378,13 +379,13 @@ export default function Page() {
                       srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984655bd6666b8abf31b4f_project-inner-06-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984655bd6666b8abf31b4f_project-inner-06-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984655bd6666b8abf31b4f_project-inner-06-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984655bd6666b8abf31b4f_project-inner-06-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984655bd6666b8abf31b4f_project-inner-06.webp 1920w"
                       className="hover-image"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div
                   role="listitem"
                   className="project-image-item w-dyn-item w-dyn-repeater-item"
                 >
-                  <a
+                  <Link
                     href="#"
                     className="hover-image-link w-inline-block w-lightbox"
                     aria-label="open lightbox"
@@ -398,7 +399,7 @@ export default function Page() {
                       srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984655f743c53e2b5720c5_project-inner-07-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984655f743c53e2b5720c5_project-inner-07-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984655f743c53e2b5720c5_project-inner-07-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984655f743c53e2b5720c5_project-inner-07-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984655f743c53e2b5720c5_project-inner-07.webp 1920w"
                       className="hover-image"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="w-dyn-hide w-dyn-empty">
@@ -459,7 +460,7 @@ export default function Page() {
                 <div role="list" className="w-dyn-items">
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/continuum-ai"
                         className="project-list-link w-inline-block"
                       >
@@ -475,7 +476,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -516,7 +517,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/invarion"
                         className="project-list-link w-inline-block"
                       >
@@ -532,7 +533,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -573,7 +574,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/hermosa"
                         className="project-list-link w-inline-block"
                       >
@@ -589,7 +590,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -630,7 +631,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/morance"
                         className="project-list-link w-inline-block"
                       >
@@ -646,7 +647,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -687,7 +688,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/dunham-co"
                         className="project-list-link w-inline-block"
                       >
@@ -703,7 +704,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -744,7 +745,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/chausser"
                         className="project-list-link w-inline-block"
                       >
@@ -760,7 +761,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -801,7 +802,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/lucident"
                         className="project-list-link w-inline-block"
                       >
@@ -817,7 +818,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -883,7 +884,7 @@ export default function Page() {
                     Let’s bring your project to life
                   </div>
                 </div>
-                <a
+                <Link
                   data-wf--button--variant="large"
                   href="/contact"
                   className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
@@ -892,7 +893,7 @@ export default function Page() {
                     <div className="button-text">Get in touch</div>
                     <div className="button-text">Get in touch</div>
                   </div>
-                </a>
+                </Link>
               </div>
               <img
                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6792cee8a958a1eea631272c_landscape-04.webp"

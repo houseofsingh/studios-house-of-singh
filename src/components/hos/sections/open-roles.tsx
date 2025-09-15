@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type OpenRolesProps = {
   title: string;
   description: string;
@@ -17,7 +19,7 @@ export default function OpenRoles(mock: OpenRolesProps) {
             <div role="list" className="w-dyn-items">
               {mock.items.map((item, index) => (
                 <div key={index} role="listitem" className="w-dyn-item">
-                  <a href={item.href} className="career-link w-inline-block">
+                  <Link href={item.href} className="career-link w-inline-block">
                     <div id="w-node-e292ff74-228b-aded-57c4-828a25cfadc0-5170c48f">
                       {item.title}
                     </div>
@@ -34,7 +36,7 @@ export default function OpenRoles(mock: OpenRolesProps) {
                         transformStyle: "preserve-3d",
                       }}
                     />
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>

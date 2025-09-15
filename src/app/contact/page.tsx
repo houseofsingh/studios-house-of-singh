@@ -15,6 +15,7 @@ import { useForm } from "react-hook-form";
 import z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Checkbox } from "@/components/ui/checkbox";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -108,7 +109,7 @@ function SectionTwo() {
                     <div key={index} className="conact-pair-item">
                       <div>{item.title}</div>
                       {item.type === "link" && (
-                        <a
+                        <Link
                           data-wf--arrow-hover-link--variant="base"
                           href="#"
                           className="arrow-hover-link w-inline-block"
@@ -129,7 +130,7 @@ function SectionTwo() {
                           >
                             {item.link}
                           </div>
-                        </a>
+                        </Link>
                       )}
                       {item.type === "text" && (
                         <div>
@@ -320,9 +321,12 @@ function ContactForm() {
                   <FormLabel className="text-sm font-normal">
                     <span className="checkbox-label w-form-label">
                       I have read and agree to the{" "}
-                      <a href="/utilities/privacy-policy" className="underline">
+                      <Link
+                        href="/utilities/privacy-policy"
+                        className="underline"
+                      >
                         Privacy Policy
-                      </a>
+                      </Link>
                     </span>
                   </FormLabel>
                 </FormItem>

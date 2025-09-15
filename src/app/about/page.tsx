@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Link from "next/link";
 import React from "react";
 
 export default function Page() {
@@ -431,7 +432,7 @@ function SectionFive() {
                         </React.Fragment>
                       ))}
                     </div>
-                    <a
+                    <Link
                       data-wf--arrow-hover-link--variant="white"
                       href="#"
                       className="arrow-hover-link w-variant-20ae16cd-e32b-9598-6279-b8d1d7fabfd3 w-inline-block"
@@ -452,7 +453,7 @@ function SectionFive() {
                       >
                         {item.email}
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               ))}

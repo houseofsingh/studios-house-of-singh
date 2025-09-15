@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -18,7 +19,7 @@ export default function Page() {
         <section className="section title">
           <div className="container---main">
             <div className="services-title-wrapper">
-              <a
+              <Link
                 data-w-id="f1197e9e-15bd-4464-b0e8-de1079947e9a"
                 href="/company/services"
                 className="back-link w-inline-block"
@@ -35,7 +36,7 @@ export default function Page() {
                   />
                 </div>
                 <div className="title-large">Services</div>
-              </a>
+              </Link>
               <h1 className="title-large">Messaging</h1>
             </div>
           </div>
@@ -183,7 +184,7 @@ export default function Page() {
                   let’s build something remarkable together.
                 </div>
               </div>
-              <a
+              <Link
                 data-wf--button--variant="large"
                 href="/company/contact-2"
                 className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
@@ -192,7 +193,7 @@ export default function Page() {
                   <div className="button-text">Get in touch</div>
                   <div className="button-text">Get in touch</div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

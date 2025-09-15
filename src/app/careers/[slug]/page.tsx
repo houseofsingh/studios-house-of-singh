@@ -17,6 +17,7 @@ import { useForm } from "react-hook-form";
 import z from "zod";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -54,7 +55,7 @@ function SectionOne() {
         <div className="container---main">
           <div className="title-with-tags">
             <div className="services-title-wrapper">
-              <a
+              <Link
                 data-w-id="f1197e9e-15bd-4464-b0e8-de1079947e9a"
                 href={mock.prevPage.href}
                 className="back-link w-inline-block"
@@ -71,7 +72,7 @@ function SectionOne() {
                   />
                 </div>
                 <div className="title-large">{mock.prevPage.title}</div>
-              </a>
+              </Link>
               <h1 className="title-large">Strategy Director</h1>
             </div>
             <div className="tags">
@@ -393,9 +394,12 @@ function ApplyForRoleForm() {
                   <FormLabel className="text-sm font-normal">
                     <span className="checkbox-label w-form-label">
                       I have read and agree to the{" "}
-                      <a href="/utilities/privacy-policy" className="underline">
+                      <Link
+                        href="/utilities/privacy-policy"
+                        className="underline"
+                      >
                         Privacy Policy
-                      </a>
+                      </Link>
                     </span>
                   </FormLabel>
                 </FormItem>

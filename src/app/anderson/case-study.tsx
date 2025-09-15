@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -46,9 +47,9 @@ export default function Page() {
                     </div>
                     <div>
                       <div className="meta-label">Website</div>
-                      <a href="https://webflow.com/" className="white-link">
+                      <Link href="https://webflow.com/" className="white-link">
                         lucident.com
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -213,7 +214,7 @@ export default function Page() {
                 <div role="list" className="case-study-grid w-dyn-items">
                   <div role="listitem" className="w-dyn-item">
                     <div className="case-study-item">
-                      <a
+                      <Link
                         href="/case-studies/morance"
                         className="hover-image-link w-inline-block"
                       >
@@ -232,7 +233,7 @@ export default function Page() {
                             alt=""
                           />
                         </div>
-                      </a>
+                      </Link>
                       <div className="case-study-item-contents">
                         <div>Case Study</div>
                         <div className="title-small">
@@ -250,7 +251,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="case-study-item">
-                      <a
+                      <Link
                         href="/case-studies/continuum"
                         className="hover-image-link w-inline-block"
                       >
@@ -267,7 +268,7 @@ export default function Page() {
                             alt=""
                           />
                         </div>
-                      </a>
+                      </Link>
                       <div className="case-study-item-contents">
                         <div>Case Study</div>
                         <div className="title-small">

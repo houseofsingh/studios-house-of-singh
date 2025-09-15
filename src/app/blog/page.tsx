@@ -1,6 +1,7 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
 import { ArticleTile } from "@/components/hos/sections/article-tile";
+import Link from "next/link";
 import React from "react";
 
 export default function Page() {
@@ -78,7 +79,7 @@ function SectionTwo() {
             <div role="list" className="w-dyn-items">
               <div role="listitem" className="w-dyn-item">
                 <div className="featured-article">
-                  <a
+                  <Link
                     href={mock.href}
                     className="hover-image-link w-inline-block"
                   >
@@ -90,23 +91,23 @@ function SectionTwo() {
                       // srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae97b738338ac7d2d551e_blog-07-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae97b738338ac7d2d551e_blog-07-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae97b738338ac7d2d551e_blog-07-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae97b738338ac7d2d551e_blog-07-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae97b738338ac7d2d551e_blog-07.webp 1920w"
                       className="hover-image"
                     />
-                  </a>
+                  </Link>
                   <div className="featured-article-contents">
                     <div className="article-meta">
-                      <a
+                      <Link
                         href={mock.category.href}
                         className="hover-link text-white"
                       >
                         {mock.category.title}
-                      </a>
+                      </Link>
                       <div className="muted-text">{mock.category.date}</div>
                     </div>
-                    <a href={mock.article.href} className="w-inline-block">
+                    <Link href={mock.article.href} className="w-inline-block">
                       <div className="title-medium text-white">
                         {mock.article.title}
                       </div>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       data-wf--button--variant="white-large"
                       href={mock.article.href}
                       className="button w-variant-521e6cc1-75a7-b354-2091-51e1cfdc804a w-inline-block"
@@ -115,7 +116,7 @@ function SectionTwo() {
                         <div className="button-text">{mock.article.cta}</div>
                         <div className="button-text">{mock.article.cta}</div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

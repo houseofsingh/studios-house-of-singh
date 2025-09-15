@@ -9,14 +9,16 @@ export default function Markdown({ children }: { children: string }) {
         remarkPlugins={[remarkGfm, remarkUnwrapImages]}
         components={{
           p: ({ node, children }) => {
-            const first = (node as any).children?.[0];
+            const first = node?.children?.[0];
             const isImg = first?.type === "element" && first.tagName === "img";
             const isLinkImg =
               first?.type === "element" &&
               first.tagName === "a" &&
-              first.children?.[0]?.tagName === "img";
+              first.children &&
+              first.children[0]?.type === "element" &&
+              (first.children[0] as any).tagName === "img";
 
-            if ((isImg || isLinkImg) && (node as any).children.length === 1) {
+            if ((isImg || isLinkImg) && node?.children.length === 1) {
               return <>{children}</>;
             }
             return <p>{children}</p>;

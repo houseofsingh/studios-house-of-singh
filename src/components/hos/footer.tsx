@@ -115,7 +115,7 @@ export default function Footer() {
                 <div className="footer-contact-group">
                   <div className="footer-contact-item">
                     <div>General enquiries</div>
-                    <a
+                    <Link
                       data-wf--arrow-hover-link--variant="white"
                       href="#"
                       className="arrow-hover-link w-variant-20ae16cd-e32b-9598-6279-b8d1d7fabfd3 w-inline-block"
@@ -136,11 +136,11 @@ export default function Footer() {
                       >
                         hello@website.com
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="footer-contact-item">
                     <div>New business</div>
-                    <a
+                    <Link
                       data-wf--arrow-hover-link--variant="white"
                       href="#"
                       className="arrow-hover-link w-variant-20ae16cd-e32b-9598-6279-b8d1d7fabfd3 w-inline-block"
@@ -161,7 +161,7 @@ export default function Footer() {
                       >
                         work@website.com
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="footer-contact-item">
                     <div>Address</div>
@@ -174,7 +174,7 @@ export default function Footer() {
                     </div>
                   </div>
                 </div>
-                <a
+                <Link
                   data-wf--button--variant="white"
                   href="/"
                   className="button w-variant-81d49abd-d037-3e85-fc56-0b1a90a282ef w-inline-block"
@@ -183,7 +183,7 @@ export default function Footer() {
                     <div className="button-text">See all 40 pages</div>
                     <div className="button-text">See all 40 pages</div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="footer-links">
                 <div>Quick links</div>
@@ -198,7 +198,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="footer-bottom">
-            <a href="/" className="w-inline-block">
+            <Link href="/" className="w-inline-block">
               <svg
                 viewBox="0 0 172 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -206,18 +206,18 @@ export default function Footer() {
               >
                 <text y="18">House of Singh Studios</text>
               </svg>
-            </a>
+            </Link>
             <div className="footer-copyright-links">
               <div className="small-text muted-text">
                 © Copyright {new Date().getFullYear()}{" "}
-                <a
+                <Link
                   href="https://link.medium-rare-templates-shop.workers.dev/?t=https%3A%2F%2Fmediumrare.shop%2F%3Futm_source%3Dwebflow.io%26utm_medium%3Dtemplate-demo%26utm_campaign%3DAndersen%2520Webflow%2520Demo%26utm_content%3DFooter%2520Copyright%2520Shop%2520Link&a=andersen&p=inner"
                   // as="document"
                   target="_blank"
                   className="white-link inside-muted"
                 >
                   House of Singh Studios
-                </a>
+                </Link>
               </div>
             </div>
             <div className="horizontal-line white" />

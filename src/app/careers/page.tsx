@@ -2,6 +2,7 @@ import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
 import GetInTouch from "@/components/hos/sections/get-in-touch";
 import OpenRoles from "@/components/hos/sections/open-roles";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -47,7 +48,7 @@ function SectionOne() {
               <div className="content-long">
                 <h1 className="title-large">{mock.title}</h1>
               </div>
-              <a
+              <Link
                 data-wf--button--variant="large"
                 href={mock.cta.href}
                 className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
@@ -56,7 +57,7 @@ function SectionOne() {
                   <div className="button-text">{mock.cta.title}</div>
                   <div className="button-text">{mock.cta.title}</div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div

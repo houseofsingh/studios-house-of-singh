@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Host_Grotesk } from "next/font/google";
+import {
+  // Geist,
+  Geist_Mono,
+  Host_Grotesk,
+} from "next/font/google";
 import "./globals.css";
 import "./anderson.css";
 import { cn } from "@/lib/utils";
@@ -9,10 +13,10 @@ const hostGrotesk = Host_Grotesk({
   subsets: ["latin"],
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",

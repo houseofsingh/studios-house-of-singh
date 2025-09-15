@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export type ArticleTileProps = {
   slug: string;
   title: string;
@@ -12,7 +14,7 @@ export type ArticleTileProps = {
 export function ArticleTile({ article }: { article: ArticleTileProps }) {
   return (
     <div className="article-grid-item">
-      <a
+      <Link
         href={`/blog/${article.slug}`}
         className="hover-image-link w-inline-block"
       >
@@ -24,8 +26,8 @@ export function ArticleTile({ article }: { article: ArticleTileProps }) {
           // srcSet="https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae9535f31cf9bb5d5787a_blog-01-p-500.webp 500w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae9535f31cf9bb5d5787a_blog-01-p-800.webp 800w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae9535f31cf9bb5d5787a_blog-01-p-1080.webp 1080w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae9535f31cf9bb5d5787a_blog-01-p-1600.webp 1600w, https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679ae9535f31cf9bb5d5787a_blog-01.webp 1920w"
           className="hover-image"
         />
-      </a>
-      <a
+      </Link>
+      <Link
         data-wf--arrow-hover-link--variant="base"
         href={`/blog-categories/${article.category.slug}`}
         className="arrow-hover-link w-inline-block"
@@ -43,10 +45,10 @@ export function ArticleTile({ article }: { article: ArticleTileProps }) {
         <div className="arrow-link-text" style={{ opacity: "0.5" }}>
           {article.category.title}
         </div>
-      </a>
-      <a href={`/blog/${article.slug}`} className="large-text">
+      </Link>
+      <Link href={`/blog/${article.slug}`} className="large-text">
         {article.title}
-      </a>
+      </Link>
       <div className="small-text muted-text">{article.date}</div>
     </div>
   );

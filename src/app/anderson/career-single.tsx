@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -18,7 +19,7 @@ export default function Page() {
           <div className="container---main">
             <div className="title-with-tags">
               <div className="services-title-wrapper">
-                <a
+                <Link
                   data-w-id="f1197e9e-15bd-4464-b0e8-de1079947e9a"
                   href="/company/careers"
                   className="back-link w-inline-block"
@@ -35,7 +36,7 @@ export default function Page() {
                     />
                   </div>
                   <div className="title-large">Careers</div>
-                </a>
+                </Link>
                 <h1 className="title-large">Strategy Director</h1>
               </div>
               <div className="tags">
@@ -262,12 +263,12 @@ export default function Page() {
                         // htmlFor="checkbox-2"
                       >
                         I have read and agree to the{" "}
-                        <a
+                        <Link
                           href="/utilities/privacy-policy"
                           className="hover-link"
                         >
                           Privacy Policy
-                        </a>
+                        </Link>
                       </span>
                     </label>
                     <input
@@ -322,7 +323,7 @@ export default function Page() {
               <div className="careers-collection w-dyn-list">
                 <div role="list" className="w-dyn-items">
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/careers/motion-design-specialist"
                       className="career-link w-inline-block"
                     >
@@ -342,10 +343,10 @@ export default function Page() {
                           transformStyle: "preserve-3d",
                         }}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/careers/senior-product-designer"
                       className="career-link w-inline-block"
                     >
@@ -365,10 +366,10 @@ export default function Page() {
                           transformStyle: "preserve-3d",
                         }}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/careers/brand-design-lead"
                       className="career-link w-inline-block"
                     >
@@ -388,10 +389,10 @@ export default function Page() {
                           transformStyle: "preserve-3d",
                         }}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/careers/design-technologist"
                       className="career-link w-inline-block"
                     >
@@ -411,10 +412,10 @@ export default function Page() {
                           transformStyle: "preserve-3d",
                         }}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div role="listitem" className="w-dyn-item">
-                    <a
+                    <Link
                       href="/careers/content-strategy-lead"
                       className="career-link w-inline-block"
                     >
@@ -434,7 +435,7 @@ export default function Page() {
                           transformStyle: "preserve-3d",
                         }}
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

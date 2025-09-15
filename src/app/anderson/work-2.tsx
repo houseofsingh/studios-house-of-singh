@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -150,7 +151,7 @@ export default function Page() {
                 <div role="list" className="w-dyn-items">
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/marco-pierre"
                         className="project-list-link w-inline-block"
                       >
@@ -166,7 +167,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -207,7 +208,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/continuum-ai"
                         className="project-list-link w-inline-block"
                       >
@@ -223,7 +224,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -264,7 +265,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/invarion"
                         className="project-list-link w-inline-block"
                       >
@@ -280,7 +281,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -321,7 +322,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/hermosa"
                         className="project-list-link w-inline-block"
                       >
@@ -337,7 +338,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -378,7 +379,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/morance"
                         className="project-list-link w-inline-block"
                       >
@@ -394,7 +395,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -435,7 +436,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/dunham-co"
                         className="project-list-link w-inline-block"
                       >
@@ -451,7 +452,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -492,7 +493,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/chausser"
                         className="project-list-link w-inline-block"
                       >
@@ -508,7 +509,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -549,7 +550,7 @@ export default function Page() {
                   </div>
                   <div role="listitem" className="w-dyn-item">
                     <div className="project-list-item">
-                      <a
+                      <Link
                         href="/projects/lucident"
                         className="project-list-link w-inline-block"
                       >
@@ -565,7 +566,7 @@ export default function Page() {
                             transformStyle: "preserve-3d",
                           }}
                         />
-                      </a>
+                      </Link>
                       <div className="project-list-item-services-collection w-dyn-list">
                         <div
                           role="list"
@@ -631,7 +632,7 @@ export default function Page() {
                     Let’s bring your project to life
                   </div>
                 </div>
-                <a
+                <Link
                   data-wf--button--variant="large"
                   href="/contact"
                   className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
@@ -640,7 +641,7 @@ export default function Page() {
                     <div className="button-text">Get in touch</div>
                     <div className="button-text">Get in touch</div>
                   </div>
-                </a>
+                </Link>
               </div>
               <img
                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6792cee8a958a1eea631272c_landscape-04.webp"

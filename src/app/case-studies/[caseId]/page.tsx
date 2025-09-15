@@ -5,8 +5,8 @@ import CaseStudyTile from "@/components/hos/sections/case-study-tile";
 import Markdown from "@/components/hos/sections/hos-markdown";
 import { caseStudies } from "@/lib/data/case-studies";
 import { getNeighbors } from "@/lib/utils";
+import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useMemo } from "react";
 
 export default function Page() {
   const { caseId } = useParams();
@@ -60,9 +60,9 @@ export default function Page() {
                       <div key={index}>
                         <div className="meta-label">{meta.label}</div>
                         {meta.type === "link" ? (
-                          <a href={meta.link} className="white-link">
+                          <Link href={meta.link || ""} className="white-link">
                             {meta.value}
-                          </a>
+                          </Link>
                         ) : (
                           <div>{meta.value}</div>
                         )}

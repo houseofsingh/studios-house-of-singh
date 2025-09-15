@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return null;
   return (
@@ -68,7 +70,7 @@ export default function Footer() {
                 <div className="footer-contact-group">
                   <div className="footer-contact-item">
                     <div>General enquiries</div>
-                    <a
+                    <Link
                       data-wf--arrow-hover-link--variant="white"
                       href="#"
                       className="arrow-hover-link w-variant-20ae16cd-e32b-9598-6279-b8d1d7fabfd3 w-inline-block"
@@ -89,11 +91,11 @@ export default function Footer() {
                       >
                         hello@website.com
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="footer-contact-item">
                     <div>New business</div>
-                    <a
+                    <Link
                       data-wf--arrow-hover-link--variant="white"
                       href="#"
                       className="arrow-hover-link w-variant-20ae16cd-e32b-9598-6279-b8d1d7fabfd3 w-inline-block"
@@ -114,7 +116,7 @@ export default function Footer() {
                       >
                         work@website.com
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="footer-contact-item">
                     <div>Address</div>
@@ -127,7 +129,7 @@ export default function Footer() {
                     </div>
                   </div>
                 </div>
-                <a
+                <Link
                   data-wf--button--variant="white"
                   href="/"
                   className="button w-variant-81d49abd-d037-3e85-fc56-0b1a90a282ef w-inline-block"
@@ -136,90 +138,90 @@ export default function Footer() {
                     <div className="button-text">See all 40 pages</div>
                     <div className="button-text">See all 40 pages</div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="footer-links">
                 <div>Quick links</div>
-                <a href="/home/home-1" className="white-link">
+                <Link href="/home/home-1" className="white-link">
                   Home 1
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/company/about-1"
                   aria-current="page"
                   className="white-link w--current"
                 >
                   About 1
-                </a>
-                <a href="/work/work-1" className="white-link">
+                </Link>
+                <Link href="/work/work-1" className="white-link">
                   Work 1
-                </a>
-                <a href="/company/pricing" className="white-link">
+                </Link>
+                <Link href="/company/pricing" className="white-link">
                   Pricing
-                </a>
-                <a href="/company/careers" className="white-link">
+                </Link>
+                <Link href="/company/careers" className="white-link">
                   Careers
-                </a>
-                <a href="/company/blog-1" className="white-link">
+                </Link>
+                <Link href="/company/blog-1" className="white-link">
                   Blog 1
-                </a>
-                <a href="/contact" className="white-link">
+                </Link>
+                <Link href="/contact" className="white-link">
                   Contact 1
-                </a>
-                <a href="/" className="white-link">
+                </Link>
+                <Link href="/" className="white-link">
                   See all pages
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className="footer-bottom">
-            <a href="/" className="w-inline-block">
+            <Link href="/" className="w-inline-block">
               <img
                 src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/679036ea9728c7ad648ae600_Logo-white.svg"
                 alt="Company Logo"
                 className="footer-large-logo"
               />
-            </a>
+            </Link>
             <div className="footer-copyright-links">
               <div className="small-text muted-text">
                 © Copyright 2025{" "}
-                <a
+                <Link
                   href="https://link.medium-rare-templates-shop.workers.dev/?t=https%3A%2F%2Fmediumrare.shop%2F%3Futm_source%3Dwebflow.io%26utm_medium%3Dtemplate-demo%26utm_campaign%3DAndersen%2520Webflow%2520Demo%26utm_content%3DFooter%2520Copyright%2520Shop%2520Link&a=andersen&p=inner"
                   // as="document"
                   target="_blank"
                   className="white-link inside-muted"
                 >
                   Medium Rare
-                </a>
+                </Link>
                 <link
                   rel="prefetch"
                   href="https://link.medium-rare-templates-shop.workers.dev/?t=https%3A%2F%2Fmediumrare.shop%2F%3Futm_source%3Dwebflow.io%26utm_medium%3Dtemplate-demo%26utm_campaign%3DAndersen%2520Webflow%2520Demo%26utm_content%3DFooter%2520Copyright%2520Shop%2520Link&a=andersen&p=inner"
                 />
                 .{" "}
-                <a
+                <Link
                   href="https://mediumrare.shop/platform/webflow-templates?utm_source=webflow.io&utm_medium=template-demo&utm_campaign=Andersen%20Webflow%20Demo&utm_content=Footer%20Webflow%20See%20more%20Templates"
                   target="_blank"
                   className="white-link inside-muted"
                 >
                   Browse more Webflow Templates
-                </a>
+                </Link>
                 <link
                   rel="prefetch"
                   href="https://mediumrare.shop/platform/webflow-templates?utm_source=webflow.io&utm_medium=template-demo&utm_campaign=Andersen%20Webflow%20Demo&utm_content=Footer%20Webflow%20See%20more%20Templates"
                 />
               </div>
               <div className="footer-supplemental-links">
-                <a
+                <Link
                   href="/template/licenses"
                   className="small-text muted-white-link"
                 >
                   Licenses
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/template/style-guide"
                   className="small-text muted-white-link"
                 >
                   Style Guide
-                </a>
+                </Link>
               </div>
             </div>
             <div className="horizontal-line white" />

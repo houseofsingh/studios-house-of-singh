@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -410,7 +411,7 @@ export default function Page() {
                   touch with our team via the contact page.
                 </div>
               </div>
-              <a
+              <Link
                 data-wf--button--variant="large"
                 href="/company/contact-2"
                 className="button w-variant-25557a4e-06dc-3969-bf0c-432cce6b2ad0 w-inline-block"
@@ -419,7 +420,7 @@ export default function Page() {
                   <div className="button-text">Get in touch</div>
                   <div className="button-text">Get in touch</div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

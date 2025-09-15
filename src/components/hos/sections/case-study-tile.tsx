@@ -1,9 +1,10 @@
 import { CaseStudy } from "@/lib/data/case-studies";
+import Link from "next/link";
 
 export default function CaseStudyTile({ caseStudy }: { caseStudy: CaseStudy }) {
   return (
     <div className="case-study-item">
-      <a
+      <Link
         href={`/case-studies/${caseStudy.id}`}
         className="hover-image-link w-inline-block"
       >
@@ -11,11 +12,12 @@ export default function CaseStudyTile({ caseStudy }: { caseStudy: CaseStudy }) {
           src={caseStudy.cover.src}
           loading="lazy"
           className="hover-image case-study-image"
+          alt=""
         />
         <div className="case-study-badge">
           <img src={caseStudy.badge.src} loading="lazy" alt="" />
         </div>
-      </a>
+      </Link>
       <div className="case-study-item-contents">
         <div>Case Study</div>
         <div className="title-small">{caseStudy.title}</div>

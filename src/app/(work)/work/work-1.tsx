@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -43,7 +44,7 @@ export default function Page() {
                   className="project-grid-item w-dyn-item"
                 >
                   <div className="project-a-wrapper">
-                    <a
+                    <Link
                       href="/projects/marco-pierre"
                       className="project-a w-inline-block"
                     >
@@ -65,7 +66,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                     <div className="project-a-services w-dyn-list">
                       <div role="list" className="project-services w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
@@ -88,7 +89,7 @@ export default function Page() {
                   className="project-grid-item w-dyn-item"
                 >
                   <div className="project-a-wrapper">
-                    <a
+                    <Link
                       href="/projects/continuum-ai"
                       className="project-a w-inline-block"
                     >
@@ -111,7 +112,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                     <div className="project-a-services w-dyn-list">
                       <div role="list" className="project-services w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
@@ -134,7 +135,7 @@ export default function Page() {
                   className="project-grid-item w-dyn-item"
                 >
                   <div className="project-a-wrapper">
-                    <a
+                    <Link
                       href="/projects/invarion"
                       className="project-a w-inline-block"
                     >
@@ -157,7 +158,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                     <div className="project-a-services w-dyn-list">
                       <div role="list" className="project-services w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
@@ -180,7 +181,7 @@ export default function Page() {
                   className="project-grid-item w-dyn-item"
                 >
                   <div className="project-a-wrapper">
-                    <a
+                    <Link
                       href="/projects/hermosa"
                       className="project-a w-inline-block"
                     >
@@ -203,7 +204,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                     <div className="project-a-services w-dyn-list">
                       <div role="list" className="project-services w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
@@ -226,7 +227,7 @@ export default function Page() {
                   className="project-grid-item w-dyn-item"
                 >
                   <div className="project-a-wrapper">
-                    <a
+                    <Link
                       href="/projects/morance"
                       className="project-a w-inline-block"
                     >
@@ -249,7 +250,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                     <div className="project-a-services w-dyn-list">
                       <div role="list" className="project-services w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
@@ -272,7 +273,7 @@ export default function Page() {
                   className="project-grid-item w-dyn-item"
                 >
                   <div className="project-a-wrapper">
-                    <a
+                    <Link
                       href="/projects/dunham-co"
                       className="project-a w-inline-block"
                     >
@@ -295,7 +296,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                     <div className="project-a-services w-dyn-list">
                       <div role="list" className="project-services w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
@@ -318,7 +319,7 @@ export default function Page() {
                   className="project-grid-item w-dyn-item"
                 >
                   <div className="project-a-wrapper">
-                    <a
+                    <Link
                       href="/projects/chausser"
                       className="project-a w-inline-block"
                     >
@@ -341,7 +342,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                     <div className="project-a-services w-dyn-list">
                       <div role="list" className="project-services w-dyn-items">
                         <div role="listitem" className="w-dyn-item">
@@ -364,7 +365,7 @@ export default function Page() {
                   className="project-grid-item w-dyn-item"
                 >
                   <div className="project-a-wrapper">
-                    <a
+                    <Link
                       href="/projects/lucident"
                       className="project-a w-inline-block"
                     >
@@ -387,7 +388,7 @@ export default function Page() {
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                     <div className="project-a-services w-dyn-list">
                       <div role="list" className="project-services w-dyn-items">
                         <div role="listitem" className="w-dyn-item">

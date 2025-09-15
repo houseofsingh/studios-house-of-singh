@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -437,9 +438,9 @@ export default function Page() {
                         unsubscribe at any time.
                       </span>
                     </label>
-                    <a href="#" className="button large w-button">
+                    <Link href="#" className="button large w-button">
                       Submit Planner
-                    </a>
+                    </Link>
                     <div className="small-text muted-text">
                       All fields marked with * are required
                     </div>

@@ -1,5 +1,6 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -43,7 +44,7 @@ export default function Page() {
                 <div className="contact-pair">
                   <div className="conact-pair-item">
                     <div>General enquiries</div>
-                    <a
+                    <Link
                       data-wf--arrow-hover-link--variant="base"
                       href="#"
                       className="arrow-hover-link w-inline-block"
@@ -64,11 +65,11 @@ export default function Page() {
                       >
                         hello@website.com
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="conact-pair-item">
                     <div>Work enquiries</div>
-                    <a
+                    <Link
                       data-wf--arrow-hover-link--variant="base"
                       href="#"
                       className="arrow-hover-link w-inline-block"
@@ -89,7 +90,7 @@ export default function Page() {
                       >
                         work@website.com
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="contact-pair">
@@ -105,7 +106,7 @@ export default function Page() {
                   </div>
                   <div className="conact-pair-item">
                     <div>Social</div>
-                    <a
+                    <Link
                       data-wf--arrow-hover-link--variant="base"
                       href="/"
                       className="arrow-hover-link w-inline-block"
@@ -126,7 +127,7 @@ export default function Page() {
                       >
                         @andersenweb
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <img
@@ -209,9 +210,12 @@ export default function Page() {
                       // htmlFor="checkbox-2"
                     >
                       I have read and agree to the{" "}
-                      <a href="/utilities/privacy-policy" className="underline">
+                      <Link
+                        href="/utilities/privacy-policy"
+                        className="underline"
+                      >
                         Privacy Policy
-                      </a>
+                      </Link>
                     </span>
                   </label>
                   <input
