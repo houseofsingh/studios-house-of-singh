@@ -14,6 +14,7 @@ export function formatDate(dateString: string | number | null) {
       dateStyle: "long",
     });
   } catch (err) {
+    console.error("err: ", err);
     // Do nothing
   }
   return date;

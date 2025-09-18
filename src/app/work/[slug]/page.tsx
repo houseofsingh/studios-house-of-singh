@@ -179,6 +179,7 @@ export default async function Page({
                           return new URL(project.client?.website || "")
                             .hostname;
                         } catch (error) {
+                          console.error("err: ", error);
                           return null;
                         }
                       })()}

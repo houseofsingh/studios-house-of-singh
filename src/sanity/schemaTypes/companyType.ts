@@ -1,4 +1,3 @@
-import { DocumentTextIcon } from "@sanity/icons";
 import { Building2Icon } from "lucide-react";
 import { defineField, defineType } from "sanity";
 

@@ -1,7 +1,5 @@
 import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
-import Markdown from "@/components/hos/sections/hos-markdown";
-import { services } from "@/lib/data/services";
 import { sanityFetch } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { SERVICE_QUERY } from "@/sanity/lib/queries/service";

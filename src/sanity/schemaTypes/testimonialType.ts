@@ -1,7 +1,5 @@
 import { QuoteIcon } from "lucide-react";
-import { PortableText } from "next-sanity";
 import { defineArrayMember, defineField, defineType } from "sanity";
-import { Testimonial } from "../../../sanity.types";
 
 export const testimonialType = defineType({
   name: "testimonial",

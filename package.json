@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "next:dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "predev": "npm run schema:extract",
+    "prebuild": "npm run schema:extract",
     "start": "next start",
     "lint": "eslint",
-    "schema:extract": "sanity schema extract --workspace production && sanity typegen generate",
-    "dev": "npm run schema:extract && npm run next:dev"
+    "schema:extract": "sanity schema extract --workspace production && sanity typegen generate"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

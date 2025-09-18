@@ -3,12 +3,7 @@ import Header from "@/components/hos/header";
 import { formatDate } from "@/lib/utils";
 import { sanityFetch } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
-import {
-  AUTHOR_QUERY,
-  POSTS_BY_AUTHOR_QUERY,
-  POSTS_QUERY,
-  TEAM_MEMBER_QUERY,
-} from "@/sanity/lib/queries";
+import { POSTS_BY_AUTHOR_QUERY, TEAM_MEMBER_QUERY } from "@/sanity/lib/queries";
 import { PortableText } from "next-sanity";
 import Link from "next/link";
 import React from "react";
@@ -91,6 +86,7 @@ export default async function Page({
                           );
                         } catch (err) {
                           // let the error be silent
+                          console.error("err: ", err);
                           return null;
                         }
 
@@ -157,6 +153,7 @@ export default async function Page({
                       <img
                         src={urlFor(person.cover).url()}
                         loading="lazy"
+                        alt=""
                         className="rounded-edges team-modal-image w-full aspect-square object-cover"
                       />
                     )}
