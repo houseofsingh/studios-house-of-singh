@@ -1,6 +1,8 @@
 import { Marquee } from "@/components/magicui/marquee";
+import { CLIENTS_QUERYResult } from "../../../../sanity.types";
+import { urlFor } from "@/sanity/lib/image";
 
-export default function Clients() {
+export default function Clients({ list: companies }: { list: CLIENTS_QUERYResult }) {
   const mock = {
     title: "Selected Clients",
     companies: [
@@ -80,13 +82,15 @@ export default function Clients() {
                 >
                   {mock.title}
                 </div>
-                {mock.companies.map((company, index) => (
-                  <div key={index} className="logo-box inside-grid">
-                    <img
-                      src={company.logoSrc}
-                      alt=""
-                      className="logo-box-image"
-                    />
+                {companies.map((company) => (
+                  <div key={company._id} className="logo-box inside-grid">
+                    {!!company.logo?.black?.asset && (
+                      <img
+                        src={urlFor(company.logo?.black?.asset).url()}
+                        alt={company.logo.black.alt}
+                        className="logo-box-image"
+                      />
+                    )}
                   </div>
                 ))}
               </div>
@@ -119,13 +123,15 @@ export default function Clients() {
                     }}
                   >
                     <div className="marquee-logos">
-                      {mock.companies.map((company, index) => (
-                        <div key={index} className="logo-box">
-                          <img
-                            src={company.logoSrc}
-                            alt=""
-                            className="logo-box-image"
-                          />
+                      {companies.map((company) => (
+                        <div key={company._id} className="logo-box">
+                          {!!company.logo?.black?.asset && (
+                            <img
+                              src={urlFor(company.logo?.black?.asset).url()}
+                              alt={company.logo.black.alt}
+                              className="logo-box-image"
+                            />
+                          )}
                         </div>
                       ))}
                     </div>

@@ -12,52 +12,144 @@ import { DialogDescription, DialogHeader, DialogTitle } from "../ui/dialog";
 const mock = {
   menu: [
     {
-      id: "about",
-      href: "/about",
-      title: "About",
-    },
-    // {
-    //   id: "contact",
-    //   href: "/contact",
-    //   title: "Contact",
-    // },
-    // {
-    //   id: "faq",
-    //   href: "/faq",
-    //   title: "FAQ",
-    // },
-    // {
-    //   id: "careers",
-    //   href: "/careers",
-    //   title: "Careers",
-    // },
-    // {
-    //   id: "blog",
-    //   href: "/blog",
-    //   title: "Blog",
-    // },
-    {
-      id: "services",
-      href: "/services",
-      title: "Services",
+      // Singular Page
+      title: "Home",
+      href: "/",
     },
     {
-      id: "work",
-      href: "/work",
+      // Collection Page - List | Item
       title: "Work",
+      href: "/work",
+      cms: true,
+      done: true,
     },
     {
-      id: "case-studies",
-      href: "/case-studies",
+      // Collection Page - List | Item
       title: "Case Studies",
+      href: "/case-studies",
+      cms: true,
+      done: false,
+    },
+
+    // Company Pages
+    {
+      // Singular Page
+      title: "About",
+      href: "/about",
     },
     {
-      id: "team",
-      href: "/team",
-      title: "Team",
+      // Singular Page
+      title: "Contact",
+      href: "/contact",
     },
-  ],
+    {
+      // Singular Page
+      title: "Contact | Project",
+      href: "/contact/project",
+    },
+    {
+      // Singular Page
+      title: "FAQ",
+      href: "/faq",
+    },
+    {
+      // Collection Page - List
+      title: "Testimonials",
+      href: "/testimonials",
+      cms: true,
+      done: true,
+    },
+    {
+      // Collection Page - List | Item
+      title: "Services",
+      href: "/services",
+      cms: true,
+      done: true,
+    },
+    {
+      // Collection Page - List | Item
+      title: "Careers",
+      href: "/careers",
+      cms: true,
+      done: true,
+    },
+    {
+      // Collection Page - List | Item
+      title: "Blog",
+      href: "/blog",
+      cms: true,
+      done: true,
+    },
+    {
+      // Collection Page - List | Item
+      title: "Team",
+      href: "/team",
+      cms: true,
+      done: true,
+    },
+
+    // Utility Pages
+    {
+      // Singular Page
+      title: "Privacy Policy",
+      href: "/policies/privacy",
+    },
+    {
+      // Singular Page
+      title: "Terms",
+      href: "/policies/terms",
+    },
+  ].map((each) => ({ ...each, id: each.title })),
 };
+// const mock = {
+//   menu: [
+//     {
+//       id: "about",
+//       href: "/about",
+//       title: "About",
+//     },
+//     // {
+//     //   id: "contact",
+//     //   href: "/contact",
+//     //   title: "Contact",
+//     // },
+//     // {
+//     //   id: "faq",
+//     //   href: "/faq",
+//     //   title: "FAQ",
+//     // },
+//     // {
+//     //   id: "careers",
+//     //   href: "/careers",
+//     //   title: "Careers",
+//     // },
+//     // {
+//     //   id: "blog",
+//     //   href: "/blog",
+//     //   title: "Blog",
+//     // },
+//     {
+//       id: "services",
+//       href: "/services",
+//       title: "Services",
+//     },
+//     {
+//       id: "work",
+//       href: "/work",
+//       title: "Work",
+//     },
+//     {
+//       id: "case-studies",
+//       href: "/case-studies",
+//       title: "Case Studies",
+//     },
+//     {
+//       id: "team",
+//       href: "/team",
+//       title: "Team",
+//     },
+//   ],
+// };
 
 export default function Header() {
   const [sheetOpen, setSheetOpen] = useState(false);
@@ -65,13 +157,22 @@ export default function Header() {
 
   const navigation = (
     <nav role="navigation">
-      <div className="flex flex-col items-start lg:flex-row lg:items-center py-6 lg:p-0 gap-3">
+      <div
+        className={cn(
+          "flex flex-col items-start lg:flex-row lg:items-center flex-wrap py-6 lg:p-0 gap-3",
+          "gap-1"
+        )}
+      >
+        {/* <div className="flex flex-col items-start lg:flex-row lg:items-center py-6 lg:p-0 gap-3"> */}
         {mock.menu.map((menuItem) => (
           <Link
             key={menuItem.id}
             href={menuItem.href}
             className={cn(
-              "flex items-center justify-start text-xl lg:text-base lg:py-2 lg:px-4"
+              "flex items-center justify-start text-xl lg:text-base lg:py-2 lg:px-4",
+              "p-0!",
+              menuItem.cms ? "underline underline-offset-4" : "",
+              menuItem.done ? "bg-green-500!" : ""
             )}
           >
             {menuItem.title}
@@ -139,7 +240,11 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className={cn("absolute inset-0 bg-white lg:bg-white/60 lg:backdrop-blur-xl")} />
+      <div
+        className={cn(
+          "absolute inset-0 bg-white lg:bg-white/60 lg:backdrop-blur-xl"
+        )}
+      />
     </div>
   );
 }

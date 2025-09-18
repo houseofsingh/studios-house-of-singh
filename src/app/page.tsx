@@ -5,17 +5,107 @@ import { Marquee } from "@/components/magicui/marquee";
 import React from "react";
 import { cn } from "@/lib/utils";
 import Clients from "@/components/hos/sections/clients";
+import { caseStudies } from "@/lib/data/case-studies";
+import { sanityFetch } from "@/sanity/lib/client";
+import { SERVICES_QUERY } from "@/sanity/lib/queries/service";
+import { urlFor } from "@/sanity/lib/image";
+import { CLIENTS_QUERY, TESTIMONIALS_QUERY } from "@/sanity/lib/queries";
+import { TESTIMONIALS_QUERYResult } from "../../sanity.types";
+import { PortableText } from "next-sanity";
 
-export default function Page() {
+export default async function Page() {
+  const services = await sanityFetch({ query: SERVICES_QUERY });
+  const clients = await sanityFetch({ query: CLIENTS_QUERY });
+  const testimonials = await sanityFetch({ query: TESTIMONIALS_QUERY });
+
+  const page = {
+    services: {
+      title: "Areas of Impact",
+      description:
+        "House of Singh Studios delivers focused expertise to push brands and products forward",
+    },
+  };
   return (
     <>
       <Header />
       <SectionOne />
-      <SectionOneO />
-      <SectionTwo />
+      {/* <pre>{JSON.stringify(clients, null, 2)}</pre> */}
+      {/* <SectionOneO /> */}
+      <Clients list={clients} />
+      {/**
+       * -----------------------------------------------------------------------------
+       * Areas of Impact / Services
+       * -----------------------------------------------------------------------------
+       */}
+      {!!services.length && (
+        <section className="section">
+          <div className="container---main">
+            <div
+              className="fade-in-on-scroll"
+              style={{
+                opacity: 0,
+                transform:
+                  "translate3d(0px, 12px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                transformStyle: "preserve-3d",
+              }}
+            >
+              <div className="vertical-section">
+                <div className="section-title">
+                  <div className="title-large">{page.services.title}</div>
+                  <div className="large-text content-short">
+                    {page.services.description}
+                  </div>
+                </div>
+                <div className="service-grid-collection w-dyn-list">
+                  <div role="list" className="service-grid w-dyn-items">
+                    {services.map((service) => (
+                      <div
+                        key={service._id}
+                        role="listitem"
+                        className="w-dyn-item"
+                      >
+                        <Link
+                          href={`/services/${service.slug?.current}`}
+                          className="service-grid-item w-inline-block"
+                        >
+                          {!!service.cover?.asset && (
+                            <img
+                              src={urlFor(service.cover.asset).url()}
+                              loading="lazy"
+                              alt=""
+                              className="service-grid-image w-full aspect-square object-cover"
+                            />
+                          )}
+                          <div className="service-panel">
+                            <div className="service-panel-title">
+                              <div className="title-small">{service.title}</div>
+                              <div className="circle-icon">
+                                <img
+                                  src="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6790339e0b57a757126051cb_interface-icon-arrow-right-white.svg"
+                                  alt="Arrow pointing right icon"
+                                  className="invert"
+                                />
+                              </div>
+                            </div>
+                            <div className="content-short">
+                              <div className="body-text">
+                                {service.description}
+                              </div>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
       <SectionThree />
       <SectionFour />
-      <SectionFive />
+      <SectionFive list={testimonials} />
       <SectionSix />
       <Footer />
     </>
@@ -24,10 +114,10 @@ export default function Page() {
 
 function SectionOne() {
   const mock = {
-    title: "We power growth through thoughtful design and clear strategy.",
+    title: "Built with purpose. Shaped by culture. Ready for what’s next.",
     cta: {
       href: "/work",
-      title: "See our work",
+      title: "Explore our work",
     },
     marquee: [
       {
@@ -190,42 +280,42 @@ function SectionOne() {
   );
 }
 
-function SectionOneO() {
-  return <Clients />;
-}
+// function SectionOneO() {
+//   return <Clients />;
+// }
 
 function SectionTwo() {
   const mock = {
     title: "Areas of impact",
     description:
-      "Andersen delivers focused expertise to push brands and products forward",
+      "House of Singh Studios delivers focused expertise to push brands and products forward",
     items: [
       {
-        title: "Brand Strategy",
+        title: "Brand Identity & Visual Design",
         description:
-          "Transform your brand identity into a compelling brand story that resonates with your audience. We align your values and vision with market opportunities.",
-        href: "/services/messaging",
+          "We develop cohesive visual identities that distill your brand’s essence into thoughtful design systems — built for clarity, recognition, and enduring creative expression.",
+        href: "/services/brand-identity-visual-design",
         src: "https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679847d190fdbc72467f1063_square-06.webp",
       },
       {
-        title: "Messaging",
+        title: "Photography & Content Creation",
         description:
-          "Craft compelling communications that capture your brand’s unique voice and connect with your target audience. We help you tell stories that drive engagement.",
-        href: "/services/messaging",
+          "From brand-led photography to short-form content, we craft image narratives that articulate who you are and resonate across channels — with purpose and precision.",
+        href: "/services/photography-content-creation",
         src: "https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/679849c401443d2a240eab0c_square-08.webp",
       },
       {
-        title: "UX Design",
+        title: "Brand Strategy & Voice",
         description:
-          "Create intuitive digital experiences that delight users and drive results. Our UX design solutions combine user research and strategic thinking to optimize interactions.",
-        href: "/services/ux-design",
+          "From brand-led photography to short-form content, we craft image narratives that articulate who you are and resonate across channels — with purpose and precision.",
+        href: "/services/brand-strategy-voice",
         src: "https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984c5c05fe87e1450e5d00_square-07.webp",
       },
       {
-        title: "Integration",
+        title: "Creative Ecosystem",
         description:
-          "Connect your digital ecosystem to streamline operations and enhance user experience. We implement integrated solutions that maximize efficiency and data flow.",
-        href: "/services/integration",
+          "Through long-term support models and flexible retainers, we embed within your team — extending design across campaigns, content, and brand moments as you grow.",
+        href: "/services/creative-ecosystem",
         src: "https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67984d17a11c968c3a5d8868_square-09.webp",
       },
     ],
@@ -296,20 +386,21 @@ function SectionThree() {
     title: "Our achievements",
     items: [
       {
-        stats: "150",
-        description: ["Digital products", "launched"],
+        stats: "160+",
+
+        description: ["Projects delivered", "across industries"],
       },
       {
-        stats: "87%",
-        description: ["Average client", "retention rate"],
+        stats: "6+",
+        description: ["Countries served through", "remote collaboration"],
       },
       {
-        stats: "$1.2B",
-        description: ["Client revenue", "growth"],
+        stats: "35%",
+        description: ["Fewer revisions through", "AI-supported design systems"],
       },
       {
-        stats: "4",
-        description: ["Teams working", "globally"],
+        stats: "12+",
+        description: ["Years of multidisciplinary", "creative practice"],
       },
     ],
   };
@@ -351,21 +442,27 @@ function SectionThree() {
 }
 
 function SectionFour() {
-  const mock = {
+  const caseStudy = caseStudies[0];
+  const page = {
     title: "Case Study",
-    subtitle: "Redefining premium audio through human-centered innovation",
-    metric: {
-      stats: "142%",
-      description: "Increase in direct-to-consumer sales within first quarter",
-    },
-    cta: {
-      title: "Read Case Study",
-      href: "/case-studies/lucident",
-    },
-    src: "https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67a166481180e2f9ac8316a7_case-study-04.webp",
-    badge:
-      "https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67a1665ebcc2a3de1ea22076_customer-logo-lucident-white.svg",
+    cta: "Read Case Study",
   };
+  // const mock = caseStudies[0];
+  // const mock = {
+  //   title: "Case Study",
+  //   subtitle: "Redefining premium audio through human-centered innovation",
+  //   metric: {
+  //     stats: "142%",
+  //     description: "Increase in direct-to-consumer sales within first quarter",
+  //   },
+  //   cta: {
+  //     title: "Read Case Study",
+  //     href: "/case-studies/lucident",
+  //   },
+  //   src: "https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67a166481180e2f9ac8316a7_case-study-04.webp",
+  //   badge:
+  //     "https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67a1665ebcc2a3de1ea22076_customer-logo-lucident-white.svg",
+  // };
   return (
     <section className="section">
       <div className="container---main">
@@ -386,35 +483,37 @@ function SectionFour() {
                     id="w-node-_1e603293-d63d-9a64-78d4-18c5ec36fea3-4281d677"
                     className="case-study-wide-contents"
                   >
-                    <div className="large-text">{mock.title}</div>
+                    <div className="large-text">{page.title}</div>
                     <div className="title-medium case-study-wide-title">
-                      {mock.subtitle}
+                      {caseStudy.title}
                     </div>
                     <div className="case-study-wide-bottom">
                       <div className="metric">
-                        <div className="title-huge">{mock.metric.stats}</div>
+                        <div className="title-huge">
+                          {caseStudy.metrics.stat}
+                        </div>
                         <div className="metric-explainer white-body-text">
-                          {mock.metric.description}
+                          {caseStudy.metrics.description}
                         </div>
                       </div>
                       <Link
                         data-wf--button--variant="white-large"
-                        href={mock.cta.href}
+                        href={`/case-studies/${caseStudy.id}`}
                         className="button w-variant-521e6cc1-75a7-b354-2091-51e1cfdc804a w-inline-block"
                       >
                         <div className="button-text-wrapper">
-                          <div className="button-text">{mock.cta.title}</div>
-                          <div className="button-text">{mock.cta.title}</div>
+                          <div className="button-text">{page.cta}</div>
+                          <div className="button-text">{page.cta}</div>
                         </div>
                       </Link>
                     </div>
                   </div>
                   <Link
-                    href={mock.cta.href}
+                    href={`/case-studies/${caseStudy.id}`}
                     className="hover-image-link w-inline-block"
                   >
                     <img
-                      src={mock.src}
+                      src={caseStudy.cover.src}
                       loading="lazy"
                       alt=""
                       // sizes="100vw"
@@ -422,7 +521,7 @@ function SectionFour() {
                       className="hover-image case-study-image"
                     />
                     <div className="case-study-badge">
-                      <img src={mock.badge} loading="lazy" alt="" />
+                      <img src={caseStudy.badge.src} loading="lazy" alt="" />
                     </div>
                   </Link>
                 </div>
@@ -435,43 +534,7 @@ function SectionFour() {
   );
 }
 
-function SectionFive() {
-  const mock = {
-    title: "Customer reviews",
-    description:
-      "Hear from our clients and see why Andersen is rated 4.97/5 on Clutch.co",
-    items: [
-      {
-        rating: 5,
-        text: "“Their strategic insights helped us navigate the intersection of artificial intelligence and healthcare.”",
-        src: "https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/67930b764a4145d4212aa394_customer-avatar-05.webp",
-        fullName: "Daniel Garcia",
-        designation: "Product Director, Chausseur",
-      },
-      {
-        rating: 5,
-        text: "“Their systematic thinking uncovered opportunities we hadn't considered possible.”",
-        src: "https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/67930b76f651b8679a61c5df_customer-avatar-02.webp",
-        fullName: "James Mitchell",
-        designation: "Brand Director, Dunham & Co",
-      },
-      {
-        rating: 5,
-        text: "“Brought unprecedented clarity to our sustainable investment framework and client communications.”",
-        src: "https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/67930b7618c5dea22323eb57_customer-avatar-03.webp",
-        fullName: "Hannah Weber",
-        designation: "Digital Director, Hermosa",
-      },
-      {
-        rating: 5,
-        text: "“Andersen captured our spirit while maintaining scientific credibility and the technical excellence we demand.”",
-        src: "https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/67930b760f2770281ec92302_customer-avatar-06.webp",
-        fullName: "Laura Thompson",
-        designation: "CTO, Parallax AI",
-      },
-    ],
-  };
-
+function SectionFive({ list }: { list: TESTIMONIALS_QUERYResult }) {
   return (
     <section className="section">
       <div className="container---main">
@@ -486,17 +549,16 @@ function SectionFive() {
         >
           <div className="vertical-section">
             <div className="section-title">
-              <div className="title-large">{mock.title}</div>
-              <div className="large-text content-short">{mock.description}</div>
+              <div className="title-large">Customer reviews</div>
             </div>
             <Marquee className="marquee [--duration:60s] w-full">
               {Array.from({ length: 2 }).map((_, index) => (
                 <div key={index} className="marquee-group">
                   <div className="testimonial-card-group">
-                    {mock.items.map((item, index) => (
+                    {list.map((testimonial, index) => (
                       <div key={index} className="testimonial-card">
                         <div className="stars">
-                          {Array.from({ length: item.rating || 0 }).map(
+                          {Array.from({ length: testimonial.rating || 0 }).map(
                             (_, index) => (
                               <img
                                 key={index}
@@ -511,20 +573,27 @@ function SectionFive() {
                           )}
                         </div>
                         <div className="large-text testimonial-card-text">
-                          {item.text}
+                          {!!testimonial.review && (
+                            <PortableText value={testimonial.review} />
+                          )}
                         </div>
                         <div className="quote-author-centered">
-                          <img
-                            // sizes="(max-width: 600px) 100vw, 600px"
-                            // srcSet="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/67930b764a4145d4212aa394_customer-avatar-05-p-500.webp 500w, https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/67930b764a4145d4212aa394_customer-avatar-05.webp 600w"
-                            alt=""
-                            src={item.src}
-                            className="customer-small"
-                          />
+                          {!!testimonial.person?.cover?.asset && (
+                            <img
+                              src={urlFor(
+                                testimonial.person?.cover?.asset
+                              ).url()}
+                              alt=""
+                              className="customer-small w-dull aspect-square object-cover"
+                            />
+                          )}
                           <div>
-                            <div>{item.fullName}</div>
+                            <div>{testimonial.person?.name}</div>
                             <div className="quote-author-position">
-                              {item.designation}
+                              {testimonial.person?.title}
+                              {!!testimonial.person?.company?.name && (
+                                <>, {testimonial.person?.company?.name}</>
+                              )}
                             </div>
                           </div>
                         </div>
@@ -543,9 +612,9 @@ function SectionFive() {
 
 function SectionSix() {
   const mock = {
-    title: "Working in over 20 international markets",
+    title: "Trusted by founders in 6+ countries and growing",
     cta: {
-      title: "Get in touch",
+      title: "Start the conversation",
       href: "/contact",
     },
   };

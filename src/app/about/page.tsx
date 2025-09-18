@@ -9,10 +9,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { sanityFetch } from "@/sanity/lib/client";
+import { CLIENTS_QUERY } from "@/sanity/lib/queries";
 import Link from "next/link";
 import React from "react";
 
-export default function Page() {
+export default async function Page() {
+  const clients = await sanityFetch({ query: CLIENTS_QUERY });
+
   return (
     <>
       <Header />
@@ -20,7 +24,7 @@ export default function Page() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
-      <SectionFour0 />
+      <Clients list={clients} />
       <SectionFive />
       <Footer />
     </>
@@ -29,7 +33,8 @@ export default function Page() {
 
 function SectionOne() {
   const mock = {
-    title: "We build brand systems that flex and scale with your ambitions.",
+    title:
+      "Inspired by founders. Informed by culture. Defined by design that lasts.",
     items: [
       {
         src: "https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/6792cee8b9c80dd67d712cd9_landscape-03.webp",
@@ -110,24 +115,27 @@ function SectionOne() {
 
 function SectionTwo() {
   const mock = {
-    title: "Our Ethos",
+    title: "Design Philosophy",
     items: [
       {
-        title: "Collaborative Spirit",
+        title: "Principled Creativity",
         descripton:
-          "We believe the best solutions emerge from open dialogue and shared perspectives. Each project is an opportunity to combine diverse viewpoints into cohesive solutions.",
+          "We believe design is more than decoration. It is a system that shapes clarity, consistency, and connection. Every project begins with strategy and ends with storytelling that lasts.",
         metrics: {
-          stats: "72",
-          description: ["Ambitious team members working global"],
+          stats: "110+",
+          description: ["Projects shaped through", "principled creativity"],
         },
       },
       {
-        title: "Creative Excellence",
+        title: "AI-Supported, Human-Led",
         descripton:
-          "Every challenge deserves an exceptional solution. We push boundaries through rigorous exploration, always seeking the perfect balance of form and function.",
+          "We integrate intelligent tools to accelerate research and reduce friction — but our design thinking remains human at its core. This balance allows us to deliver clarity with speed, without losing craft.",
         metrics: {
-          stats: "93+",
-          description: ["Successful products", "launched"],
+          stats: "35%",
+          description: [
+            "Fewer revisions through",
+            "AI-supported design systems",
+          ],
         },
       },
     ],
@@ -177,11 +185,11 @@ function SectionTwo() {
 }
 function SectionThree() {
   const mock = {
-    src: "https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/679abb9a5289a6e521650fa5_team-02.webp",
-    title: "A word from our Founder",
-    text: `“In 2015, after years at Pentagram and working across Copenhagen's design scene, I saw an opportunity to create something different: a practice where strategic thinking and creative execution could truly work in harmony. Not just another agency, but a place where thoughtful design could transform how businesses approach their biggest challenges.”`,
-    fullName: "Sebastien Andersen",
-    designation: "Founder & CEO",
+    src: "https://cdn.sanity.io/images/sjn00lvn/production/b330f28f2802a3b1a249b5308ba12406a4e4ad8f-854x1236.heif",
+    title: "Our Founder’s Vision",
+    text: `“When I started House of Singh Studios, the goal was more than design. I wanted to build a studio that founders could trust for clarity, systems, and long-term creative direction. Our work is shaped by culture, strategy, and intelligent tools — but always led by people. We exist to help purpose-driven brands grow with intention and leave an enduring mark.”`,
+    fullName: "Maninder Singh",
+    designation: "Founder & Creative Director",
   };
   return (
     <section className="section">
@@ -202,7 +210,7 @@ function SectionThree() {
               // sizes="(max-width: 479px) 85vw, (max-width: 991px) 222px, 30vw"
               // srcSet="https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/679abb9a5289a6e521650fa5_team-02-p-500.webp 500w, https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/679abb9a5289a6e521650fa5_team-02-p-800.webp 800w, https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/679abb9a5289a6e521650fa5_team-02.webp 1024w"
               alt=""
-              className="rounded-edges testimonial-card-image"
+              className="rounded-edges testimonial-card-image w-full aspect-square object-cover"
             />
             <div className="testimonial-card-d-contents">
               <div className="title-small long-text">{mock.title}</div>
@@ -227,43 +235,50 @@ function SectionFour() {
       "We have deep expertise across sectors that demand excellence.",
     items: [
       {
-        title: "2010",
-        subtitle: "Breaking ground",
+        title: "2014",
+        subtitle: "Roots in India",
         content:
-          "Two designers and a strategist sharing a small Copenhagen studio laid the foundation for what would become Andersen. Their early work with local startups established a reputation for merging strategic thinking with distinctive design.",
+          "House of Singh began in New Delhi as a boutique studio, working with artists, SMEs, and cultural organizations. These early years established our reputation for clarity and storytelling in design, building the foundation of a practice that has grown steadily ever since.",
       },
       {
-        title: "2013",
-        subtitle: "Code meets craft",
+        title: "2016",
+        subtitle: "Early Growth",
         content:
-          "As client demands evolved beyond traditional design, Andersen expanded into full-service digital development. The acquisition of a boutique development studio in Amsterdam brought technical excellence in-house.",
-      },
-      {
-        title: "2015",
-        subtitle: "London Calling",
-        content:
-          "Opening the London studio marked a turning point, bringing Andersen into one of the world's most dynamic creative markets. This expansion attracted global clients and diverse talent, accelerating the agency's evolution.",
+          "The studio expanded its reach, delivering branding, campaigns, and content for diverse industries. With each project, the practice developed multidisciplinary expertise across visual design, photography, and strategy, while nurturing a growing community of creative collaborators in India and beyond.",
       },
       {
         title: "2018",
-        subtitle: "Breaking patterns",
+        subtitle: "Expanding Horizons",
         content:
-          "The launch of Andersen Labs formalized the agency's commitment to emerging technologies. This dedicated R&D unit began exploring the intersection of design and artificial intelligence.",
+          "Our services broadened beyond brand identity into photography, video production, and aerial drone projects. This expansion marked the transition from a boutique studio into a multidisciplinary practice, blending visual storytelling with design systems to serve a wider range of client needs.",
+      },
+      {
+        title: "2020",
+        subtitle: "Navigating Challenges",
+        content:
+          "The global pandemic forced a reset, as many projects were paused or scaled down. Instead of retreating, the studio used this period to refine its methods, focusing on sustainable systems and preparing for international expansion under a stronger vision.",
       },
       {
         title: "2021",
-        subtitle: "No Borders",
+        subtitle: "North American Chapter",
         content:
-          "Strategic expansion into key markets - Barcelona, Munich, and Toronto - positioned Andersen to better serve an increasingly international client base. These studios brought fresh perspectives and deeper cultural insights to the agency's work.",
+          "Founder Maninder Singh relocated to Toronto, bringing the practice to North America. This move aligned the studio with new markets, allowing it to work with founder-led brands, SMEs, and culturally rooted ventures across the Greater Toronto Area.",
       },
       {
-        title: "2024",
-        subtitle: "Beyond horizons",
+        title: "2023",
+        subtitle: "Trademark & Incorporation",
         content:
-          "The integration of advanced AI capabilities across all service offerings signals Andersen's continued evolution. What started as a commitment to crafting thoughtful digital experiences has evolved into a global practice.",
+          "House of Singh Studios Inc. was federally incorporated and trademarked in Canada. This milestone formalized the brand as a modern design studio, rooted in culture and strategy, and prepared it for long-term growth across Canadian and international markets.",
+      },
+      {
+        title: "2025",
+        subtitle: "AI-Supported Future",
+        content:
+          "With the integration of AI supported research and workflows, the studio continues to evolve. By combining intelligent tools with human led design, House of Singh Studios delivers faster, smarter, and more consistent outcomes. This sets a new standard for scalable and intentional branding.",
       },
     ],
   };
+
   return (
     <section className="section">
       <div className="container---main">
@@ -362,36 +377,32 @@ function SectionFour() {
     </section>
   );
 }
-function SectionFour0() {
-  return <Clients />;
-}
+// function SectionFour0() {
+//   return <Clients />;
+// }
 function SectionFive() {
   const mock = {
-    title: "Locations",
+    title: "Our Footprints",
     description:
-      "We’re headquartered in Denmark but work with clients globally.",
+      "A global presence with studios in Canada, India and the UK serving clients worldwide.",
     items: [
       {
         src: "https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/67a4079bb1d2026561f62e83_country-denmark-map.svg",
-        title: "Denmark",
-        address: ["Nørregade 17", "1364 København K", "Denmark"],
-        email: "europe@website.com",
+        title: "Canada",
+        address: ["Mississauga"],
+        email: "hello+canada@houseofsingh.com",
       },
       {
         src: "https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/67a4079b259e1781c8dfb36c_country-uk-map.svg",
-        title: "UK",
-        address: [
-          "14 Kensington Park Road",
-          "London W11 3BU",
-          "United Kingdom",
-        ],
-        email: "uk@website.com",
+        title: "India",
+        address: ["New Delhi"],
+        email: "hello+india@houseofsingh.com",
       },
       {
         src: "https://cdn.prod.website-files.com/6789d5b2099e81e88395d27f/67a4079b0de7ad80010514bc_country-usa-map.svg",
-        title: "USA",
-        address: ["328 Willowbrook Ave", "Pasadena CA 91105", "USA"],
-        email: "usa@website.com",
+        title: "UK",
+        address: ["London"],
+        email: "hello+uk@houseofsingh.com",
       },
     ],
   };

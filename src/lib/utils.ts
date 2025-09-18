@@ -5,6 +5,20 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+export function formatDate(dateString: string | number | null) {
+  if (!dateString) return;
+
+  let date;
+  try {
+    date = new Date(dateString).toLocaleDateString("en-US", {
+      dateStyle: "long",
+    });
+  } catch (err) {
+    // Do nothing
+  }
+  return date;
+}
+
 export function getNeighbors<T>(arr: readonly T[], index: number): T[] {
   if (
     !Array.isArray(arr) ||

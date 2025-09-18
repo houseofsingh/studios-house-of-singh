@@ -25,93 +25,75 @@ function SectionOne() {
     title: "Frequently Asked Questions",
     items: [
       {
-        title: "Approach",
+        title: "Collaboration & Partnership",
         items: [
           {
-            question: "How do you build design systems?",
+            question: "What is your process for starting a new project?",
             answer: [
-              "We create design systems that balance consistency with flexibility, typically starting with a core component library that we test with real use cases. Implementation includes documentation, governance guidelines, and training for your internal teams.",
+              "We begin with a discovery session to understand your goals, challenges, and audience. From there, we create a tailored proposal outlining scope, timelines, and deliverables. Once aligned, we onboard you into our system so every step is structured, transparent, and collaborative.",
             ],
           },
           {
-            question: "How do you measure brand impact?",
+            question: "Do you offer fractional design team support?",
             answer: [
-              "We establish clear metrics at project outset, combining traditional brand health indicators with specific business outcomes. Our strategy team works with your analytics department to create custom measurement frameworks that track both immediate results and long-term brand value creation.",
-              "",
-              "Throughout our engagements, we continuously refine these measurements based on emerging data and market dynamics. This includes quarterly deep-dive analytics sessions where we analyze trends, identify opportunities, and adjust our approach to maximize impact across all channels and touchpoints.",
+              "Yes. Through fractional partnerships, we act as your extended design team without the overhead of a full-time hire. This allows startups and growing businesses to access high-level creative direction and execution on a flexible basis.",
             ],
           },
           {
-            question: "How do you manage scope changes?",
+            question: "Do you engage in design for equity partnerships?",
             answer: [
-              "We build flexibility into our project structures while maintaining clear boundaries. Changes are evaluated against project goals and timeline impact. Our project leads work proactively to identify potential scope shifts early, allowing for thoughtful discussion and adjustment.",
+              "Selectively. For founders whose vision aligns with our values, we sometimes offer design systems in exchange for equity. This is a curated process where we evaluate brand potential, growth trajectory, and alignment before moving forward.",
             ],
           },
           {
-            question: "Who owns the IP for deliverables?",
+            question: "Do you provide retainer packages for monthly support?",
             answer: [
-              "We typically transfer full ownership of all deliverables to clients, including design systems, code, and associated documentation. For custom tools we develop, we can structure agreements that allow shared usage rights while protecting your competitive advantage.",
-            ],
-          },
-          {
-            question: "What's your approach to sustainable digital design?",
-            answer: [
-              "We consider environmental impact in our technical decisions, from server architecture to front-end optimization. Our digital sustainability framework helps clients reduce their digital carbon footprint while improving performance and user experience.",
-            ],
-          },
-          {
-            question: "What's your accessibility standard?",
-            answer: [
-              "Accessibility is a fundamental part of our design process, not an afterthought. We design and test to WCAG 2.1 AA standards by default, and we can support AAA compliance when required. Our team includes certified accessibility specialists who review all major deliverables.",
-              "",
-              "Our commitment to accessibility extends beyond technical compliance to include user testing with diverse ability groups and regular accessibility audits. We also provide training to help your teams maintain accessibility standards after launch.",
-            ],
-          },
-          {
-            question: "What's your accessibility standard?",
-            answer: [
-              "Accessibility is a fundamental part of our design process, not an afterthought. We design and test to WCAG 2.1 AA standards by default, and we can support AAA compliance when required. Our team includes certified accessibility specialists who review all major deliverables.",
-              "",
-              "Our commitment to accessibility extends beyond technical compliance to include user testing with diverse ability groups and regular accessibility audits. We also provide training to help your teams maintain accessibility standards after launch.",
+              "Yes. We offer tiered retainer packages that cover ongoing design needs such as campaign graphics, social media content, and founder branding. Retainers ensure consistent output, priority access, and deep alignment with your evolving brand.",
             ],
           },
         ],
       },
       {
-        title: "Business",
+        title: "Global Presence & Content",
         items: [
           {
-            question: "What's your experience with AI implementation?",
+            question: "Do you work with clients outside Canada?",
             answer: [
-              "Our approach combines deep technical expertise with practical business application. Rather than chasing trends, we focus on identifying specific areas where AI can create measurable value for your business, always prioritizing transparency and ethical considerations.",
-              "",
-              "We maintain an active AI research practice, collaborating with academic institutions and industry partners to stay at the forefront of developments. This allows us to bring tested, practical applications of AI to our clients while avoiding the pitfalls of implementing immature technologies.",
+              "Yes. While based in Mississauga, we collaborate with clients in India, the UK, and beyond. Our systems and workflows are designed for seamless global collaboration, making geography no barrier to great design.",
             ],
           },
           {
-            question: "What's your crisis response protocol?",
+            question: "Do you provide ongoing brand content support?",
             answer: [
-              "We maintain dedicated rapid response capabilities for our retained clients, with clear escalation protocols and response time agreements. For crisis situations, we can typically mobilize a core team within 24 hours.",
-              "",
-              "Our crisis response framework includes pre-defined communication channels, decision-making protocols, and resource allocation procedures. We regularly conduct crisis simulation exercises to ensure our teams can respond effectively under pressure.",
+              "Absolutely. Many clients retain us to manage their visual storytelling across campaigns, social platforms, and events. We ensure content remains consistent, fresh, and aligned with the larger brand system.",
             ],
           },
           {
-            question: "Do you have Web3 expertise?",
+            question:
+              "How do you approach photography differently for brands, weddings, and real estate?",
             answer: [
-              "Yes, we've developed several Web3 projects, focusing on practical applications that solve real business problems. Our approach emphasizes user experience and business value over technical complexity, ensuring solutions are both innovative and usable.",
+              "Each requires a unique lens. For brands, we focus on storytelling and identity. For weddings, it’s about capturing emotion and narrative. For real estate, clarity and space take priority. Our approach adapts while maintaining a consistent standard of quality.",
             ],
           },
           {
-            question: "Do you work with regulated industries?",
+            question:
+              "Do you offer video and social media content creation as well?",
             answer: [
-              "Yes, particularly in finance, healthcare, and aerospace. Our team includes specialists familiar with regulatory frameworks in these sectors, and we've developed specific workflows to ensure compliance while maintaining creative excellence. We can provide relevant case studies upon request.",
+              "Yes. We produce short-form video content, reels, and digital campaigns tailored for modern platforms. This complements our photography and design services, giving clients cohesive storytelling across formats.",
             ],
           },
           {
-            question: "Will our core team stay consistent?",
+            question:
+              "Can you create both strategy and execution under one roof?",
             answer: [
-              "We maintain core team consistency throughout the duration of your project, typically comprising a strategic lead, creative director, and project lead. We scale the wider team based on project phases and requirements, always ensuring proper knowledge transfer.",
+              "Yes. We bridge strategy and execution so you don’t need multiple vendors. From brand frameworks and messaging to photography, video, and design systems — everything is integrated for clarity and consistency.",
+            ],
+          },
+          {
+            question:
+              "How do you maintain consistency across design and content?",
+            answer: [
+              "Through brand guidelines, system-led design, and AI-supported workflows. Every asset is created within a defined framework, ensuring your brand feels consistent whether it’s a logo, a campaign, or a social post.",
             ],
           },
         ],
@@ -203,7 +185,7 @@ function SectionTwo() {
       "If you have any further questions or enquiries, please get in touch with our team via the contact page.",
     cta: {
       href: "/contact",
-      title: "Get in touch",
+      title: "Start the conversation",
     },
   };
 

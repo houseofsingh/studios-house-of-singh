@@ -2,16 +2,30 @@ import Footer from "@/components/hos/footer";
 import Header from "@/components/hos/header";
 import GetInTouch from "@/components/hos/sections/get-in-touch";
 import OpenRoles from "@/components/hos/sections/open-roles";
+import { sanityFetch } from "@/sanity/lib/client";
+import { CAREERS_QUERY } from "@/sanity/lib/queries";
 import Link from "next/link";
 
-export default function Page() {
+export default async function Page() {
+  const careers = await sanityFetch({ query: CAREERS_QUERY });
+
   return (
     <>
       <Header />
       <SectionOne />
       <SectionTwo />
       <SectionThree />
-      <SectionFour />
+      <div
+        className="fade-in-on-scroll"
+        style={{
+          opacity: 0,
+          transform:
+            "translate3d(0px, 12px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+          transformStyle: "preserve-3d",
+        }}
+      >
+        <OpenRoles list={careers} />
+      </div>
       <SectionFive />
       <Footer />
     </>
@@ -215,65 +229,6 @@ function SectionThree() {
           </div>
         </div>
       </section>
-    </div>
-  );
-}
-
-function SectionFour() {
-  const mock = {
-    title: "Open roles",
-    description: "Join our growing global team of change-makers.",
-    items: [
-      {
-        href: "/careers/strategy-director",
-        title: "Strategy Director",
-        location: "Remote",
-        basis: "Full-time",
-      },
-      {
-        href: "/careers/motion-design-specialist",
-        title: "Motion Design Specialist",
-        location: "Barcelona",
-        basis: "Full-time",
-      },
-      {
-        href: "/careers/senior-product-designer",
-        title: "Senior Product Designer",
-        location: "London",
-        basis: "Full-time",
-      },
-      {
-        href: "/careers/brand-design-lead",
-        title: "Brand Design Lead",
-        location: "Amsterdam or Remote",
-        basis: "Full-time",
-      },
-      {
-        href: "/careers/design-technologist",
-        title: "Design Technologist",
-        location: "Copenhagen",
-        basis: "Full-time",
-      },
-      {
-        href: "/careers/content-strategy-lead",
-        title: "Content Strategy Lead",
-        location: "Remote",
-        basis: "Full-time",
-      },
-    ],
-  };
-
-  return (
-    <div
-      className="fade-in-on-scroll"
-      style={{
-        opacity: 0,
-        transform:
-          "translate3d(0px, 12px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-        transformStyle: "preserve-3d",
-      }}
-    >
-      <OpenRoles {...mock} />
     </div>
   );
 }

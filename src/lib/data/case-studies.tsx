@@ -34,7 +34,7 @@ export type CaseStudy = {
 export const caseStudies: CaseStudy[] = [
   {
     id: "lucident",
-    title: "Redefining premium audio through human-centered innovation",
+    title: "From Concept to Culture: A Brand’s Evolution",
     subtitle:
       "When Lucident approached us to help launch their revolutionary L1 speaker, they weren’t just looking for a product campaign. They needed a complete rethinking of how premium audio products connect with modern audiences.",
     cover: {
@@ -44,8 +44,8 @@ export const caseStudies: CaseStudy[] = [
       src: "https://cdn.prod.website-files.com/678eed9ee60eb7c8b8e1f3f0/67a1665ebcc2a3de1ea22076_customer-logo-lucident-white.svg",
     },
     metrics: {
-      stat: "142%",
-      description: "Increase in direct-to-consumer sales within first quarter",
+      stat: "60%",
+      description: "Increase in engagement within the first six months",
     },
     meta: [
       {
